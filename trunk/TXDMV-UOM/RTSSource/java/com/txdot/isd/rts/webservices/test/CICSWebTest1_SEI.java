@@ -1,0 +1,1 @@
+package com.txdot.isd.rts.webservices.test;/* &CICSWebTest1_SEI& */public interface CICSWebTest1_SEI extends java.rmi.Remote{/* &CICSWebTest1_SEI.getNumber& */ public int getNumber(int aiGuess);}/* #CICSWebTest1_SEI# */

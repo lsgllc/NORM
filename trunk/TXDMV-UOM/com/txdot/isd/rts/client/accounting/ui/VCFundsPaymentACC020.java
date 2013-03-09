@@ -1,0 +1,173 @@
+package com.txdot.isd.rts.client.accounting.ui;
+
+import java.util.Vector;
+
+import com.txdot.isd.rts.client.general.ui.AbstractViewController;
+
+import com.txdot.isd.rts.services.exception.RTSException;
+import com.txdot.isd.rts.services.util.constants.AccountingConstant;
+import com.txdot.isd.rts.services.util.constants.GeneralConstant;
+import com.txdot.isd.rts.services.util.constants.ScreenConstant;
+
+/*
+ *
+ * VCFundsPaymentACC020.java
+ *
+ * (c) Texas Department of Transportation 2001
+ * ---------------------------------------------------------------------
+ * Change History:
+ * Name			Date		Description
+ * ------------	-----------	--------------------------------------------
+ * M Abernethy	09/07/2001  Added comments 
+ * MAbs			04/24/2002	Fixed bugs for too many records going to MF   
+ * 							in FundsRemittance
+ * 							defect 3570
+ * K Harrell	03/25/2004	JavaDoc Cleanup  
+ * 							Ver 5.2.0
+ * J Zwiener	12/01/2004	If a HT error occurs, user would be thrown
+ *							back to ACC020 screen and allowed to press
+ *							"Remit" again.  This causes 2 identical pmts
+ *							to be recorded at MF.
+ *							With this fix, application will return to
+ *							Main Menu thus preventing double payments.
+ *							modify processData()
+ *							defect 6715 Ver 5.2.2
+ * K Harrell	03/02/2005	Java 1.4 Work
+ * 							defect 7884 Ver 5.2.3 
+ * Ray Rowehl	03/21/2005	Use getters and setters to access parent 
+ * 							fields
+ * 							defect 7884 Ver 5.2.3
+ * K Harrell	07/26/2005	Java 1.4 Work
+ * 							defect 7884 Ver 5.2.3
+ * --------------------------------------------------------------------- 
+ */
+/**
+ * The View Controller for the ACC020 screen.  It handles screen 
+ * navigation and controls the visibility of its frame.
+ *
+ * @version	5.2.3		07/26/2005
+ * @author	Michael Abernethy
+ * <br>Creation Date:	07/03/2001 08:26:12
+ */
+public class VCFundsPaymentACC020 extends AbstractViewController
+{
+	/**
+	 * Creates a VCFundsPaymentACC020.
+	 */
+	public VCFundsPaymentACC020()
+	{
+		super();
+	}
+	/**
+	 * Returns the Module name constant used by the RTSMediator to pass 
+	 * the data to the appropriate Business Layer class.
+	 * 
+	 * @return int 
+	 */
+	public int getModuleName()
+	{
+		return GeneralConstant.ACCOUNTING;
+	}
+	/**
+	 * Controls the screen flow from ACC020.  It passes the data to the
+	 *  RTSMediator.
+	 * 
+	 * @param aiCommand	int
+	 * @param aaData 	Object
+	 */
+	public void processData(int aiCommand, java.lang.Object aaData)
+	{
+		switch (aiCommand)
+		{
+			case ENTER :
+				{
+					setDirectionFlow(AbstractViewController.NEXT);
+					setNextController(ScreenConstant.RPR000);
+					try
+					{
+						getMediator().processData(
+							getModuleName(),
+							AccountingConstant.REMIT_FUNDS_DUE_RECORDS,
+							aaData);
+						getFrame().setVisibleRTS(false);
+					}
+					catch (RTSException leRTSEx)
+					{
+						leRTSEx.displayError(getFrame());
+						// defect 6715
+						// do not remain on ACC020 - force back to Main 
+						// Menu
+						processData(DESKTOP, null);
+						// end defect 6715
+					}
+					break;
+				}
+			case CANCEL :
+				{
+					setDirectionFlow(AbstractViewController.CANCEL);
+					try
+					{
+						getMediator().processData(
+							getModuleName(),
+							AccountingConstant.NO_DATA_TO_BUSINESS,
+							aaData);
+					}
+					catch (RTSException leRTSEx)
+					{
+						leRTSEx.displayError(getFrame());
+					}
+					getFrame().setVisibleRTS(false);
+					break;
+				}
+				// defect 6715
+			case DESKTOP :
+				{
+					setData(aaData);
+					setDirectionFlow(AbstractViewController.DESKTOP);
+					try
+					{
+						getMediator().processData(
+							getModuleName(),
+							GeneralConstant.NO_DATA_TO_BUSINESS,
+							aaData);
+					}
+					catch (RTSException leRTSEx)
+					{
+						leRTSEx.displayError(getFrame());
+					}
+					getFrame().setVisibleRTS(false);
+					break;
+				}
+				// end defect 6715
+		}
+	}
+	/**
+	 * Creates the actual frame, stores the protected variables needed 
+	 * by the VC, and sends the data to the frame.
+	 * 
+	 * @param avPreviousControllers	Vector 
+	 * @param asTransCode 			String
+	 * @param aaData 				Object
+	 */
+	public void setView(
+		Vector avPreviousControllers,
+		String asTransCode,
+		Object aaData)
+	{
+		if (getFrame() == null)
+		{
+			java.awt.Dialog laDialog = getMediator().getParent();
+			if (laDialog == null)
+			{
+				setFrame(
+					new FrmFundsPaymentACC020(
+						getMediator().getDesktop()));
+			}
+			else
+			{
+				setFrame(new FrmFundsPaymentACC020(laDialog));
+			}
+		}
+		super.setView(avPreviousControllers, asTransCode, aaData);
+	}
+}

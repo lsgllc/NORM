@@ -1,0 +1,168 @@
+## 	English vervison
+## 	------------------------------------------------------------------------------
+###	COMMON MESSAGES
+1	The System Is Currently Not Available. Return Later to Complete the Process. We Apologize for the Inconvenience.
+2	The vehicle was not found. Corrected Vehicle Information may be required.
+3	Your Vehicle Cannot be Processed. Contact Your County Tax Office or Vehicle Title and Registration (VTR) Headquarters at VTR_PHONE_NO for Further Assistance.
+4	The county you are trying to view is inactive. Please select an active county.
+99	The System is Currently not Available. Return Later to Complete the Process. We Apologize for the Inconvenience.
+
+
+###	ADDRESS CHANGE MESSAGES
+101	Your Vehicle Does Not Qualify for Online Address Change. To Change Your Renewal Recipient Address, Contact Your County Tax Office or VTR Headquarters at VTR_PHONE_NO for Further Assistance.
+150	Thank you for using Address Change.
+
+
+###	REGISTRATION RENEWAL MESSAGES
+201	Your Vehicle Does Not Qualify for Online Registration Renewal. Contact Your County Tax Office or Vehicle Title and Registration (VTR) Headquarters at VTR_PHONE_NO for Further Assistance.
+202	The vehicle you entered has already been renewed.
+203	NO REG RENEWAL TO MAKE !!!!!!
+205	Your Vehicle Does Not Qualify for Online Registration Renewal. Your Expiration Date does not Fall Within the Next 90 Days.
+206 	The vehicle you entered is already in the shopping cart.
+207 	If you change the county, your shopping cart will be emptied, Are you sure you want to change the county?
+210	Your Vehicle Does Not Qualify for Online Registration Renewal. Your Vehicle Registration has Expired. Contact Your County Tax Office for Further Assistance.
+211	Select County of Residence
+215	Credit card payment has been denied.
+216	Credit Card Could not be Validated. Re-Enter Information or Try Another Credit Card.
+217	A Connection Failure Has Occurred. Please Contact your County Tax Assessor Collector to Verify Payment Completed.
+218 	Your vehicle renewal(s) is in process. Please verify completion with your county tax office.
+250	Thank you for using Registration Renewal.
+
+301	Thank you for using Special Plate order. 
+302	Your personalized plate selection is available.
+303	Your personalized plate selection is not available.
+304	Special Plates service is unavailable.
+305	Enter a valid personalized license plate request.
+306	Your plate order is no longer available to you.
+307	Personalized license plate request have a maximum of 7 characters.
+308	Enter your personalized plate choice.
+309	Invalid character in your personalized plate choice.
+310	The vehicle you entered cannot be validated.
+311	Shopping Cart is Empty.
+312	The receipt for the next plate you ordered cannot be viewed.
+313	Your cart item has been deleted.
+314	Your session has expired. All items in your shopping cart have been removed.
+315	Are you sure you want to cancel your special plate order?\\nAll items in your shopping cart will be lost.
+316	Your plate order is empty and cannot be added to the cart.
+317	Failed insert. Please try again.
+318	Shopping cart item does not exist.
+319	Failed to retreive inventory for this plate. Please Try Again.
+320	Your current plate selection is not available. Please select a special plate.
+321	The following information is incorrect:
+322	The value is not a valid length.
+323	The value is not a number.
+324	Enter a valid name.
+325	Enter a valid name line two.
+326	Enter a valid address.
+327	Enter a valid address line two.
+328	Enter a valid city.
+329	Enter a valid state.
+330	Enter a valid county.
+331	Enter a valid zip code.
+332	Enter a valid zip code 4.
+333	Enter a valid area code.
+334	Enter a valid phone number.
+335	Enter a valid e-mail address.
+336	The minimum browser level needed is Internet Explorer 4.0, Netscape Navigator 6.0 \\n or equivalent in order to view your plate dynamicly.
+337	Only 1 ISA symbol may appear on a plate.
+338	All plates must have at least 1 alphanumeric character.
+339	Plate selected is not available.
+340	Group selected is not available.
+341	Enter a valid bill name.
+342	Enter a valid card number.
+343	Enter a valid card security code.
+344	Cannot submit payment for $0.00 amount.
+345	Billing name must contain at least one letter.
+351	Help Single set
+352	Help Personalize
+353	Help Check Availability
+354	Help Plateno
+355	Help Last 4 vin
+356	Help Personalize pulldowns
+357	Help Addl set
+358	Help ISA
+
+
+### 	Spanish version
+## 	------------------------------------------------------------------------------
+###	COMMON MESSAGES
+1-esp	El Sistema no se encuentra disponible en este momento. Favor de regresar más tarde para completar este proceso. Disculpe las Molestias.
+2-esp	El vehículo no se encuentra. Es posible que se requiera información corregida sobre el vehículo.
+3-esp	No se puede procesar el trámite de su vehículo. Para mayor asistencia,favor de comunicarse con la Oficina de Recaudación de Impuestos de su condado o la Oficina de Títulos y Registro Vehicular (VTR) al VTR_PHONE_NO.
+4-esp	El condado que ha seleccionado está inactivo. Por favor seleccione un condado activo.
+99-esp	Ha ocurrido un Error de Sistema. Favor de regresar más tarde para completar este proceso. Disculpe las Molestias.
+
+
+###	ADDRESS CHANGE MESSAGES
+101-esp	Su vehículo no cumple con los requisitos para Cambio de Domicilio por Internet. Para cambiar el domicilio de Renovación de Registro Vehicular, favor de comunicarse a la Oficina de Recaudación de Impuestos de su Condado o a la Oficina de VTR al  VTR_PHONE_NO para mayor asistencia.
+150-esp	Gracias por utilizar el cambio de domicilio.
+
+
+###	REGISTRATION RENEWAL MESSAGES
+201-esp	Su vehículo no cumple con los requisitos para Renovación por Internet. Para mayor asistencia, favor de comunicarse a la Oficina de Recaudación de Impuestos de su Condado o a la Oficina de VTR al  VTR_PHONE_NO.
+202-esp	El vehículo que usted anotó ya ha sido renovado.
+205-esp	Su vehículo no cumple con los requisitos para Renovación por Internet. La fecha de vencimiento no se presenta dentro de los siguientes 90 días.
+206-esp El vehículo que usted acaba de elegir ya se encuentra en el carrito de compras.
+207-esp Si cambia su selección de condado, su carrito de compras se vaciará. ¿Está usted seguro que quiere cambiar su selección de condado?
+210-esp	Su vehículo no cumple con los requisitos para Renovación por Internet. El registro de vehículo ya se ha vencido. Favor de comunicarse con la Oficina de Recaudación de Impuestos de su Condado o a la Oficina de VTR al  VTR_PHONE_NO para mayor asistencia.
+211-esp Seleccione el condado donde vive
+215-esp	El pago con Tarjeta de Crédito ha sido negado.
+216-esp	Falta información para la tarjeta de crédito. Se requiere información corregida.
+217-esp	Una falla ha ocurrido en la conección. Favor de contactarse con la oficina de Recaudación de Impuestos de su condado para verificar que se haya completado la transacción del pago.
+218-esp La renovación para su vehículo se está procesando.  Favor de comunicarse con la oficina de recaudación en su condado para verificar que esté completo.
+250-esp	Gracias por utilizar la Renovación de Registro.
+
+301-esp	Thank you for using Special Plate order. 
+302-esp	Your personalized plate selection is available.
+303-esp	Your personalized plate selection is not available.
+304-esp	Special Plates service is unavailable.
+305-esp	Enter a valid personalized license plate request.
+306-esp	Your plate order is no longer available to you.
+307-esp	Personalized license plate request have a maximum of 7 characters.
+308-esp	Enter your personalized plate choice.
+309-esp	Invalid character in your personalized plate choice.
+310-esp	The vehicle you entered cannot be validated.
+311-esp	Shopping Cart is Empty.
+312-esp	The receipt for the next plate you ordered cannot be viewed.
+313-esp	Your cart item has been deleted.
+314-esp	Your session has expired. All items in your shopping cart have been removed.
+315-esp	Are you want to cancel your special plate order?\\nYou will loose all items in the cart
+316-esp	Your plate order is empty and cannot be added to the cart.
+317-esp	Failed insert. Please try again.
+318-esp	Shopping cart item does not exist.
+319-esp	Failed to retreive inventory for this plate. Please Try Again.
+320-esp	Your current plate selection is not available. Please select a special plate.
+321-esp	The following information is incorrect:
+322-esp	The value is not a valid length.
+323-esp	The value is not a number.
+324-esp	Enter a valid name.
+325-esp	Enter a valid name line two.
+326-esp	Enter a valid address.
+327-esp	Enter a valid address line two.
+328-esp	Enter a valid city.
+329-esp	Enter a valid state.
+330-esp	Enter a valid county.
+331-esp	Enter a valid zip code.
+332-esp	Enter a valid zip code 4.
+333-esp	Enter a valid area code.
+334-esp	Enter a valid phone number.
+335-esp	Enter a valid e-mail address.
+336-esp	The minimum browser level needed is Internet Explorer 4.0, Netscape Navigator 6.0 \\n or equivalent in order to view your plate dynamicly.
+337-esp	Only 1 ISA symbol may appear on a plate.
+338-esp	All plates must have at least 1 alphanumeric character.
+339-esp	Plate selected is not available.
+340-esp	Group selected is not available.
+341-esp	Enter a valid bill name.
+342-esp	Enter a valid card number.
+343-esp	Enter a valid card security code.
+344-esp	Cannot submit payment for $0.00 amount.
+345-esp	Billing name must contain at least one letter.
+351-esp	Help Single set
+352-esp	Help Personalize
+353-esp	Help Check Availability
+354-esp	Help Plateno
+355-esp	Help Last 4 vin
+356-esp	Help Personalize pulldowns
+357-esp	Help Addl set
+358-esp	Help ISA
+

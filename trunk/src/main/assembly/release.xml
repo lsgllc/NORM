@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">	
+	<id></id>
+
+	<formats>
+		<format>zip</format>
+	</formats>
+
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+	<moduleSets>
+		<moduleSet>
+			<binaries>
+				<outputDirectory>dist/all-lib</outputDirectory>
+				<includeDependencies>true</includeDependencies>
+				<dependencySets>
+					<dependencySet>
+						<useTransitiveDependencies>true</useTransitiveDependencies>
+					</dependencySet>
+				</dependencySets>
+				<unpack>false</unpack>
+			</binaries>
+		</moduleSet>
+	</moduleSets>
+	<fileSets>
+		<!--<fileSet>-->
+			<!--<directory>demo/benchmarks/site/apidocs</directory>-->
+			<!--<outputDirectory>javadocs/demo</outputDirectory>-->
+		<!--</fileSet>-->
+		<!---->
+		<!--&lt;!&ndash; Schema entries &ndash;&gt;-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/src/main/schema/sql</directory>-->
+			<!--<outputDirectory>mysql-schema-ddl/</outputDirectory>-->
+		<!--</fileSet>-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/benchmarks/hibernate3</directory>-->
+			<!--<outputDirectory>mysql-schema-ddl/</outputDirectory>-->
+		<!--</fileSet>		-->
+		<!--&lt;!&ndash; Release notes and other project docs &ndash;&gt;-->
+		<!--<fileSet>-->
+			<!--<directory>docs</directory>-->
+			<!--<outputDirectory>docs/</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>Release Notes.docx</include>-->
+				<!--<include>HighLevelGG Architecture with FEF Client.pdf</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+		<!--<fileSet>-->
+			<!--<directory>docs</directory>-->
+			<!--<outputDirectory>/</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>README.txt</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/src/test/resources</directory>-->
+			<!--<outputDirectory>config/</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>**/taxonomy-definitions-*.properties</include>-->
+			<!--</includes>-->
+		<!--</fileSet>		-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/src/site/resources/images</directory>-->
+			<!--<outputDirectory>models/</outputDirectory>-->
+			<!--<excludes>-->
+				<!--<exclude>exported_logical_object_model.jpg</exclude>-->
+				<!--<exclude>**/domain/*</exclude>-->
+			<!--</excludes>-->
+		<!--</fileSet>-->
+		<!--&lt;!&ndash;  include unit test results &ndash;&gt;-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/benchmarks/surefire-reports</directory>-->
+			<!--<outputDirectory>unit-tests-results/</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>*.txt</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+
+		<!--&lt;!&ndash; Include the global graph binary. &ndash;&gt;-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/benchmarks</directory>-->
+			<!--<outputDirectory>dist</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>*-${version}.jar</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+		<!--<fileSet>-->
+			<!--<directory>api-service/benchmarks</directory>-->
+			<!--<outputDirectory>dist</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>*-${version}.jar</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+		<!---->
+		<!---->
+		<!--&lt;!&ndash;  include demo properties &ndash;&gt;-->
+		<!--<fileSet>-->
+			<!--<directory>demo/benchmarks/classes</directory>-->
+			<!--<outputDirectory>demo</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>*.properties</include>-->
+			<!--</includes>-->
+		<!--</fileSet>-->
+		<!--<fileSet>-->
+			<!--<directory>javamodel/src/test/resources</directory>-->
+			<!--<outputDirectory>demo</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>**/taxonomy-definitions-*.properties</include>-->
+			<!--</includes>-->
+		<!--</fileSet>		-->
+		<!--<fileSet>-->
+			<!--<directory>demo/src/main/java</directory>-->
+			<!--<outputDirectory>demo/src/</outputDirectory>-->
+			<!--<includes>-->
+				<!--<include>**/*.java</include>-->
+			<!--</includes>-->
+		<!--</fileSet>			-->
+	</fileSets>
+</assembly>
+

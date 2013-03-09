@@ -1,0 +1,1 @@
+package com.txdot.isd.rts.webservices.inv;/* &RtsInvService_SEI& */public interface RtsInvService_SEI extends java.rmi.Remote{/* &RtsInvService_SEI.processData$2& */ public com.txdot.isd.rts.webservices.inv.data.RtsInvResponse[] processData(com.txdot.isd.rts.webservices.inv.data.RtsInvRequest[] aarrRequest);}/* #RtsInvService_SEI# */

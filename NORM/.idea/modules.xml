@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../trunk/DynaMorph-API/DynaMorph-API.iml" filepath="$PROJECT_DIR$/../trunk/DynaMorph-API/DynaMorph-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../trunk/NORM-Core/NORM-Core.iml" filepath="$PROJECT_DIR$/../trunk/NORM-Core/NORM-Core.iml" group="Norm and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../trunk/Norm.iml" filepath="$PROJECT_DIR$/../trunk/Norm.iml" group="Norm and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/TXDMV-UOM.iml" filepath="$PROJECT_DIR$/../trunk/TXDMV-UOM/TXDMV-UOM.iml" group="Norm and modules" />
+      <module fileurl="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/mavendemo.iml" filepath="$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/mavendemo.iml" />
+    </modules>
+  </component>
+</project>
+

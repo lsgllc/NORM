@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/trunk/DynaMorph.iml" filepath="$PROJECT_DIR$/trunk/DynaMorph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" filepath="$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsgllc-super-pom.iml" filepath="$PROJECT_DIR$/lsgllc-super-pom.iml" />
+    </modules>
+  </component>
+</project>
+

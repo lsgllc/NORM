@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.lsgllc.norm:NORM-Core:1.0a-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lsgllc/norm/NORM-Core/1.0a-SNAPSHOT/NORM-Core-1.0a-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lsgllc/norm/NORM-Core/1.0a-SNAPSHOT/NORM-Core-1.0a-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lsgllc/norm/NORM-Core/1.0a-SNAPSHOT/NORM-Core-1.0a-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

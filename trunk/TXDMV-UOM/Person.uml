@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>gov.state.tx.dmv.uom.person.Person</OriginalElement>
+  <nodes>
+    <node x="-241.0" y="155.0">gov.state.tx.dmv.uom.person.Person</node>
+    <node x="347.0" y="80.0">gov.state.tx.dmv.uom.common.vehicle.Vehicle</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="56.5" y="183.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
