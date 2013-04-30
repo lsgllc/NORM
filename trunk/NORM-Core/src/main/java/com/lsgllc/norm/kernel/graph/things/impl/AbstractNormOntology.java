@@ -1,8 +1,7 @@
 package com.lsgllc.norm.kernel.graph.things.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologySegmentId;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormOntology;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
 

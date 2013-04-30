@@ -1,7 +1,7 @@
 package com.lsgllc.norm.kernel.graph.model.meta.owl;
 
 import com.lsgllc.norm.kernel.core.util.containment.INormContainer;
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 
 import java.util.Set;
 import java.util.UUID;

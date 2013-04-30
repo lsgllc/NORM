@@ -1,7 +1,5 @@
 package com.lsgllc.norm.kernel.graph.model.instance;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
-import com.lsgllc.norm.kernel.graph.model.instance.types.INSTANCE_TYPE;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
 import com.lsgllc.norm.util.client.INormIdentifyable;
 

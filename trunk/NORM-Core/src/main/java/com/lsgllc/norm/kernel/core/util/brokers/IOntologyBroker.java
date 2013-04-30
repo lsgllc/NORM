@@ -1,12 +1,7 @@
 package com.lsgllc.norm.kernel.core.util.brokers;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
-import com.lsgllc.norm.util.exceptions.NormSystemException;
-import com.lsgllc.norm.util.impl.GRAPH_PROPERTY_KEYS;
-
-import java.util.List;
-import java.util.Map;
+import com.lsgllc.norm.kernel.graph.things.INormThing;
 
 /*
  * $Id
@@ -18,8 +13,10 @@ import java.util.Map;
  *
  ***************************************************************************
 */
-public interface IOntologyBroker<T extends INormId> extends INormBroker<T> {
+public interface IOntologyBroker<K ,V  > extends INormBroker<K,V> {
     ClassLoader getContextClassLoader();
     OntologyId getOntology(String key);
+    void removeOntology(String key);
+    void updateOntology(String key);
 
 }

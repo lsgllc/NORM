@@ -1,12 +1,15 @@
 package com.lsgllc.norm.kernel.core.util.brokers.impl;
 
 import com.lsgllc.norm.kernel.core.util.brokers.IOntologyBroker;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormOntology;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormOntologySegment;
 import com.lsgllc.norm.kernel.graph.things.INormObjectStore;
+import com.lsgllc.norm.kernel.graph.things.INormThing;
 import com.lsgllc.norm.util.exceptions.NormSystemException;
 import com.lsgllc.norm.util.impl.GRAPH_PROPERTY_KEYS;
+import org.apache.openjpa.kernel.AbstractBrokerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 
@@ -15,21 +18,12 @@ import java.util.*;
 /*
 *  OntologyBroker
 *
-* This computer software and information is distributed with "restricted
-* rights." Use, duplication, or disclosure by the Government is subject
-* to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights
-* in Technical Data and Computer Software clause at DFARS 252.227-7013.
-*
-* The Contractor is:
-*     Potomac Fusion, Inc.,
-*     4460 Brookfield Corporate Drive
-*     Chantilly, VA 20151
 *
 * created: Apr 30, 2010 
 *  Author: sampaw
 */
 @ContextConfiguration(locations = { "classpath:../openjpa/META-INF/spring/camel-context.xml" })
-public class OntologyBroker implements IOntologyBroker {
+public class OntologyBroker<K extends String, V extends IOntologyBroker<K,V> > extends AbstractNormBroker<K,V>  {
 
     public Map<UUID,Object> orgObjs = new HashMap<UUID, Object>();
     public Map<UUID, INormOntologySegment> orgDmis = new HashMap<UUID, INormOntologySegment>();
@@ -215,11 +209,6 @@ public class OntologyBroker implements IOntologyBroker {
         return this.springContext.getClassLoader();
     }
 
-    @Override
-    public OntologyId getOntology(String key) {
-        return null;
-    }
-
     public boolean isPackageNormPersistable(String classPackageName) {
         return this.normPersitablePackages.contains(classPackageName);
     }
@@ -242,7 +231,7 @@ public class OntologyBroker implements IOntologyBroker {
 
 
     @Override
-    public Object getId(String key) {
+    public INormId<K> getId(String key) {
         return null;
     }
 }

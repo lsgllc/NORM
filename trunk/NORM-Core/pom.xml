@@ -37,7 +37,12 @@
         <camel.osgi.export.pkg>com.lsgllc.camel.*</camel.osgi.export.pkg>
         <!-- to avoid us import bunch other package -->
         <camel.osgi.dynamic>*</camel.osgi.dynamic>
+        <norm.asm.java.model.src.location>
+            /Users/sameloyiv/IdeaProjects/NORM/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/Person.java
+        </norm.asm.java.model.src.location>
+        <norm.asm.propertyFilename>normBCPatterns.properties</norm.asm.propertyFilename>
     </properties>
+
     <dependencies>
 
         <dependency>
@@ -199,6 +204,30 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.lsgllc.norm.mojo</groupId>-->
+                <!--<artifactId>GenAsmMojo</artifactId>-->
+                <!--<version>1.0a-SNAPSHOT</version>-->
+                <!--<configuration>-->
+                    <!--<javaModel>/Users/sameloyiv/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/model/person/Person.java-->
+                    <!--</javaModel>-->
+                    <!--<resourceDirectory>-->
+                        <!--/Users/sameloyiv/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources-->
+                    <!--</resourceDirectory>-->
+                    <!--<propertyFilename>-->
+                        <!--norm-asm-properties.properties-->
+                    <!--</propertyFilename>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>generate-resources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>generate</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
         </plugins>
     </build>
 

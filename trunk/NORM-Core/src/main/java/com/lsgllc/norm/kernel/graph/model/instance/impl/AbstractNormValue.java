@@ -1,6 +1,6 @@
 package com.lsgllc.norm.kernel.graph.model.instance.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.instance.INormValue;
 import com.lsgllc.norm.kernel.graph.model.instance.identity.INormInstanceId;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INormInstanceType;

@@ -1,6 +1,6 @@
 package gov.state.tx.dmv.uom.common.organizations;
 
-import gov.state.tx.dmv.uom.common.person.IPerson;
+import gov.state.tx.dmv.uom.common.person.IPersonNormReady;
 import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
 
 /**
@@ -20,5 +20,5 @@ import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
  * @date
  */
 public interface IGovernmental<P extends PERSON_TYPE> extends IOrganization<ORGANIZATION_TYPES> {
-    IPerson<P> getOfficial(P official);
+    IPersonNormReady<P> getOfficial(P official);
 }

@@ -45,4 +45,14 @@ public class AbstractNormInstance<K,V extends INormThing<?,?>,T> extends Abstrac
     public void setValue(INormValue<?, INormInstanceType<T>> value) {
         this.value = value;
     }
+
+
+    public Object getValue(String canonicalName, String type) {
+        return null;
+    }
+
+    public void setValue(Object personType, String canonicalName, String type) {
+    }
+
+
 }

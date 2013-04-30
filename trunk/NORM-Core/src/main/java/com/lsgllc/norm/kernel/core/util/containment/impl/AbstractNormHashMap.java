@@ -1,6 +1,7 @@
 package com.lsgllc.norm.kernel.core.util.containment.impl;
 
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
  * Created By: sameloyiv
@@ -18,7 +19,7 @@ import java.util.HashMap;
  * @description
  * @date
  */
-public abstract class AbstractNormHashMap<K ,V> extends HashMap<K,V> {
+public abstract class AbstractNormHashMap<K ,V> extends ConcurrentSkipListMap<K,V> {
     enum RELATIONSHIP {HAS_ONE_OR_MORE, HAS_ZERO_OR_MORE, IS_CONTAINED_BY, REFERENCED_BY}
 
     private V theThing = null;

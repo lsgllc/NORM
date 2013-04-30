@@ -1,7 +1,7 @@
 package com.lsgllc.norm.util.client.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
-import com.lsgllc.norm.kernel.graph.identity.impl.AbstractNormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.impl.AbstractNormId;
 import com.lsgllc.norm.util.client.INormCreds;
 
 import java.util.UUID;

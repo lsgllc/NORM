@@ -22,8 +22,8 @@ import java.util.UUID;
  * @date
  */
 public class ShortId extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public ShortId(UUID id) {
-        super(id);
+    public ShortId(String canonicalName) {
+        super(INSTANCE_TYPE.SHORT, UUID.fromString(canonicalName));
     }
 
     public ShortId() {

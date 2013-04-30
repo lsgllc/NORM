@@ -1,11 +1,10 @@
 package com.lsgllc.norm.kernel.graph.things.impl;
 
+import com.lsgllc.norm.kernel.graph.model.instance.impl.NormScalarValue;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
-import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.meta.identity.AttributeId;
 import com.lsgllc.norm.kernel.graph.things.INormAttribute;
-import com.lsgllc.norm.util.exceptions.NormNotFoundException;
 
 /**
  * Created By: sameloyiv

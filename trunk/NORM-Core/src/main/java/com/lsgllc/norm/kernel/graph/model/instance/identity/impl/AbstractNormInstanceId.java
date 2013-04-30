@@ -1,6 +1,6 @@
 package com.lsgllc.norm.kernel.graph.model.instance.identity.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.impl.AbstractNormId;
+import com.lsgllc.norm.kernel.core.util.identity.impl.AbstractNormId;
 import com.lsgllc.norm.kernel.graph.model.instance.identity.INormInstanceId;
 import com.lsgllc.norm.kernel.graph.model.instance.types.impl.AbstractNormInstanceType;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INSTANCE_TYPE;
@@ -12,16 +12,11 @@ import java.util.UUID;
 
 public class AbstractNormInstanceId<T> extends AbstractNormId<T> implements INormInstanceId<T>,Serializable {
 
-    public AbstractNormInstanceId(UUID id) {
-        super(id);
-    }
-
-    private AbstractNormInstanceId() {
-        this(UUID.randomUUID());
-    }
-
     public AbstractNormInstanceId(T type) {
-        this();
+        this(type, UUID.randomUUID());
+    }
+    public AbstractNormInstanceId(T type,UUID id) {
+        super(id);
         this.type =  (type instanceof INSTANCE_TYPE)?
             AbstractNormInstanceType.createType((INSTANCE_TYPE) type):
                 AbstractNormMetaType.createType((ELEMENT_TYPES) type);

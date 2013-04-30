@@ -1,6 +1,6 @@
 package gov.state.tx.dmv.uom.common.organizations;
 
-import gov.state.tx.dmv.uom.common.person.IPerson;
+import gov.state.tx.dmv.uom.common.person.IPersonNormReady;
 import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
 
 import java.util.Set;
@@ -21,6 +21,6 @@ import java.util.Set;
  * @description
  * @date
  */
-public interface IPrivate<P extends IPerson, T extends PERSON_TYPE> extends IOrganization<ORGANIZATION_TYPES> {
+public interface IPrivate<P extends IPersonNormReady, T extends PERSON_TYPE> extends IOrganization<ORGANIZATION_TYPES> {
     Set<P> getOwners();
 }

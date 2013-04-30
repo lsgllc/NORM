@@ -21,8 +21,8 @@ import java.util.UUID;
  * @date
  */
 public class ByteId  extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public ByteId(UUID id) {
-        super(id);
+    public ByteId(String canonicalName) {
+        super(INSTANCE_TYPE.BYTE, UUID.fromString(canonicalName));
     }
 
     public ByteId() {

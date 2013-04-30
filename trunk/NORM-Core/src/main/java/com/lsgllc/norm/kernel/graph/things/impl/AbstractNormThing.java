@@ -1,12 +1,14 @@
 package com.lsgllc.norm.kernel.graph.things.impl;
 
 import com.lsgllc.norm.kernel.core.util.containment.impl.AbstractNormContainer;
+import com.lsgllc.norm.kernel.graph.model.instance.impl.NormScalarValue;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
 import com.lsgllc.norm.kernel.graph.typing.INormType;
 import com.lsgllc.norm.util.client.INormIdentifyable;
 import com.lsgllc.norm.util.exceptions.NormNotFoundException;
 
 import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * Created By: sameloyiv
@@ -24,7 +26,7 @@ import java.util.Set;
  * @description
  * @date
  */
-public abstract class AbstractNormThing<K ,V extends INormThing<?,?>> extends AbstractNormContainer<K,Set<V>> implements INormThing<K,V>,INormIdentifyable<K>{
+public abstract class AbstractNormThing<K ,V extends INormThing<?,?>> extends AbstractNormContainer<K,ConcurrentSkipListSet<V>> implements INormThing<K,V>,INormIdentifyable<K>{
 
     private K id;
     private V thing;
@@ -59,6 +61,7 @@ public abstract class AbstractNormThing<K ,V extends INormThing<?,?>> extends Ab
     public void setId(K id) {
 
     }
+
 
 
 }

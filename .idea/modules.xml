@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/trunk/DynaMorph.iml" filepath="$PROJECT_DIR$/trunk/DynaMorph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk/GenAsmMojo/GenAsmMojo.iml" filepath="$PROJECT_DIR$/trunk/GenAsmMojo/GenAsmMojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" filepath="$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk/Norm.iml" filepath="$PROJECT_DIR$/trunk/Norm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trunk/TXDMV-UOM/TXDMV-UOM.iml" filepath="$PROJECT_DIR$/trunk/TXDMV-UOM/TXDMV-UOM.iml" />
       <module fileurl="file://$PROJECT_DIR$/lsgllc-super-pom.iml" filepath="$PROJECT_DIR$/lsgllc-super-pom.iml" />
     </modules>
   </component>

@@ -1,6 +1,6 @@
 package com.lsgllc.norm.kernel.graph.typing.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.typing.INormType;
 import com.lsgllc.norm.util.client.INormIdentifyable;
 

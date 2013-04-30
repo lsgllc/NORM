@@ -1,8 +1,8 @@
 package com.lsgllc.norm.kernel.core.util.containment;
 
-import com.lsgllc.norm.kernel.graph.identity.INormContainerMarker;
+import com.lsgllc.norm.kernel.core.util.identity.INormContainerMarker;
 
-import java.util.Map;
+import java.util.concurrent.ConcurrentNavigableMap;
 
 /**
  * Created By: sameloyiv
@@ -20,7 +20,7 @@ import java.util.Map;
  * @description
  * @date
  */
-public interface INormContainer<K, V > extends Map<K,V>, INormContainerMarker<K,V> {
+public interface INormContainer<K, V > extends ConcurrentNavigableMap<K,V>, INormContainerMarker<K,V> {
     V getEntityURI();
 
 }

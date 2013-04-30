@@ -1,6 +1,6 @@
 package com.lsgllc.norm.kernel.graph.model.meta.identity;
 
-import com.lsgllc.norm.kernel.graph.identity.impl.AbstractNormId;
+import com.lsgllc.norm.kernel.core.util.identity.impl.AbstractNormId;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
 
 import java.util.UUID;

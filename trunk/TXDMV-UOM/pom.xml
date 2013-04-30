@@ -11,7 +11,7 @@
 
     <groupId>gov.state.tx.dmv</groupId>
     <artifactId>TXDMV-UOM</artifactId>
-    <version>1.0</version>
+    <!--<version>1.0</version>-->
     <packaging>jar</packaging>
 
     <name>TXDMV-UOM</name>
@@ -19,6 +19,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <norm.asm.model.native.className>gov.state.tx.dmv.uom.common.person.impl.PersonNative</norm.asm.model.native.className>
+        <norm.asm.model.ready.className>gov.state.tx.dmv.uom.common.person.impl.PersonNormReady</norm.asm.model.ready.className>
+        <norm.asm.model.native.iface>gov.state.tx.dmv.uom.common.person.IPersonNative</norm.asm.model.native.iface>
+        <norm.asm.model.ready.iface>gov.state.tx.dmv.uom.common.person.IPersonNormReady</norm.asm.model.ready.iface>
+        <norm.asm.dest.rsrc.dir>/Users/sameloyiv/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources</norm.asm.dest.rsrc.dir>
+        <norm.asm.dest.property.filename>norm-asm-java-template.txt</norm.asm.dest.property.filename>
+        <norm.asm.commentOutCode>false</norm.asm.commentOutCode>
     </properties>
 
     <dependencies>
@@ -53,6 +60,10 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
         </dependency>
 
     </dependencies>
@@ -159,6 +170,26 @@
                                 <version>1.1.1</version>
                             </dependency>
                         </dependencies>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.lsgllc.norm.mojo</groupId>
+                        <artifactId>GenAsmMojo</artifactId>
+                        <version>1.0a-SNAPSHOT</version>
+                        <configuration>
+                            <!--<resourceDirectory>${norm.asm.dest.rsrc.dir}</resourceDirectory>-->
+                            <!--<propertyFilename>-->
+                                <!--${project.build.directory}-->
+                            <!--</propertyFilename>-->
+                            <!--<jm>${norm.asm.model.className}</jm>-->
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>

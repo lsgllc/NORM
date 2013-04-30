@@ -3,6 +3,7 @@ package com.lsgllc.norm.kernel.graph.things;
 import com.lsgllc.norm.kernel.core.util.containment.INormContainer;
 
 import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * Created By: sameloyiv
@@ -20,5 +21,5 @@ import java.util.Set;
  * @description
  * @date
  */
-public interface INormProperty<K,V> extends INormContainer<K, Set<V>> {
+public interface INormProperty<K,V> extends INormContainer<K, ConcurrentSkipListSet<V>> {
 }

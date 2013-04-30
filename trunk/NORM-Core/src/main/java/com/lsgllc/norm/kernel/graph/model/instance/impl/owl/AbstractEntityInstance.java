@@ -1,10 +1,9 @@
 package com.lsgllc.norm.kernel.graph.model.instance.impl.owl;
 
 import com.lsgllc.norm.kernel.graph.model.instance.INormInstance;
-import com.lsgllc.norm.kernel.graph.model.instance.impl.NormMetaValue;
+import com.lsgllc.norm.kernel.graph.model.instance.identity.impl.ObjectInstanceId;
+import com.lsgllc.norm.kernel.graph.model.instance.impl.NormObjectValue;
 import com.lsgllc.norm.kernel.graph.model.instance.impl.scalar.AbstractNormInstance;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.EntityId;
-import com.lsgllc.norm.kernel.graph.things.INormProperty;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
 
 /**
@@ -23,8 +22,8 @@ import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
  * @description
  * @date
  */
-public class AbstractEntityInstance<K extends EntityId,V extends INormInstance<?,?,T>,T> extends AbstractNormInstance<K,V,T> {
-    public AbstractEntityInstance(INormProperty<K, V> value) {
-        super((K) new EntityId(), new NormMetaValue(value, ELEMENT_TYPES.ENTITY));
+public class AbstractEntityInstance<K extends ObjectInstanceId,V extends INormInstance<?,?,T>,T> extends AbstractNormInstance<K,V,T> {
+    public AbstractEntityInstance(String canonicalName, Object value) {
+        super((K) new ObjectInstanceId(canonicalName), new NormObjectValue(value, ELEMENT_TYPES.ENTITY));
     }
 }

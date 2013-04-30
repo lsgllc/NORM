@@ -4,6 +4,7 @@ import com.lsgllc.norm.kernel.core.util.containment.INormContainer;
 
 import java.io.Serializable;
 import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
 
 /**
  * Created By: sameloyiv
@@ -21,5 +22,5 @@ import java.util.Set;
  * @description
  * @date
  */
-public interface INormOntology<K,V> extends INormContainer<K, Set<V>>,Serializable {
+public interface INormOntology<K,V> extends INormContainer<K, ConcurrentSkipListSet<V>>,Serializable {
 }

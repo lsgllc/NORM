@@ -21,8 +21,8 @@ import java.util.UUID;
  * @date
  */
 public class BooleanId extends AbstractNormInstanceId<INSTANCE_TYPE>  {
-    public BooleanId(UUID id) {
-        super(id);
+    public BooleanId(String canonicalName) {
+        super(INSTANCE_TYPE.BOOLEAN, UUID.fromString(canonicalName));
     }
 
     public BooleanId() {

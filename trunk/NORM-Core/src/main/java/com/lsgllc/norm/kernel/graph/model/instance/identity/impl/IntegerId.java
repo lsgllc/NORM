@@ -22,8 +22,8 @@ import java.util.UUID;
  * @date
  */
 public class IntegerId extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public IntegerId(UUID id) {
-        super(id);
+    public IntegerId(String canonicalName) {
+        super(INSTANCE_TYPE.INTEGER, UUID.fromString(canonicalName));
     }
 
     public IntegerId() {

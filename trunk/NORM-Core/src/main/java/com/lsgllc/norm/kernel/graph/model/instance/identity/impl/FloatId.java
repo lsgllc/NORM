@@ -21,8 +21,8 @@ import java.util.UUID;
  * @date
  */
 public class FloatId extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public FloatId(UUID id) {
-        super(id);
+    public FloatId(String canonicalName) {
+        super(INSTANCE_TYPE.FLOAT, UUID.fromString(canonicalName));
     }
 
     public FloatId() {

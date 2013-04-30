@@ -2,7 +2,7 @@ package com.lsgllc.norm.util.client.impl;
 
 import com.lsgllc.norm.kernel.core.util.brokers.impl.OntologyBroker;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
-import com.lsgllc.norm.kernel.graph.identity.INormId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.util.client.INormConnection;
 import com.lsgllc.norm.util.client.INormCreds;
 import com.lsgllc.norm.util.client.INormDataMart;

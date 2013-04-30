@@ -1,18 +1,10 @@
 package com.lsgllc.norm.kernel.graph.model.instance.impl;
 
-import com.lsgllc.norm.kernel.graph.identity.INormId;
-import com.lsgllc.norm.kernel.graph.model.instance.identity.INormInstanceId;
+import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.instance.identity.impl.AbstractNormInstanceId;
-import com.lsgllc.norm.kernel.graph.model.instance.impl.AbstractNormValue;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INSTANCE_TYPE;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INormInstanceType;
-import com.lsgllc.norm.kernel.graph.model.instance.INormValue;
-import com.lsgllc.norm.kernel.graph.model.meta.things.INormMetaThing;
-import com.lsgllc.norm.kernel.graph.things.INormThing;
-import com.lsgllc.norm.kernel.graph.things.impl.AbstractNormThing;
-import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
 import com.lsgllc.norm.kernel.graph.typing.INormType;
-import com.lsgllc.norm.util.client.INormIdentifyable;
 
 /**
  * Created By: sameloyiv

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/trunk" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/trunk/DynaMorph-Core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trunk/GenAsmMojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/trunk/NORM-Core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trunk/TXDMV-UOM" charset="UTF-8" />
   </component>
 </project>
 

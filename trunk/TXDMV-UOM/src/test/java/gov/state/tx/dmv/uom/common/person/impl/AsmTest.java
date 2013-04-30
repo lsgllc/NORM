@@ -11,7 +11,7 @@ package gov.state.tx.dmv.uom.common.person.impl;
 import com.lsgllc.norm.kernel.core.normgen.NormClassLoader;
 import com.lsgllc.norm.kernel.core.util.brokers.impl.OntologyBroker;
 import gov.state.tx.dmv.uom.common.contact.IContactInformation;
-import gov.state.tx.dmv.uom.common.person.IPerson;
+import gov.state.tx.dmv.uom.common.person.IPersonNormReady;
 import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
 import gov.state.tx.dmv.uom.exceptions.StrangeAndWonderfulException;
 import gov.state.tx.dmv.uom.exceptions.UOMSpecifiedException;
@@ -29,20 +29,8 @@ import java.util.*;
 /*
  * $Id
  *
- * This computer software and information is distributed with "restricted
- * rights." Use, duplication, or disclosure by the Government is subject
- * to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights
- * in Technical Data and Computer Software clause at DFARS 252.227-7013.
- *
- * The Contractor is:
- *     Potomac Fusion, Inc.,
- *     4460 Brookfield Corporate Drive
- *     Chantilly, VA 20151
- ***************************************************************************
- *
- * com.lsgllc.norm/AsmTestOld
  * created: Apr 20, 2010 at 11:30:27 AM
- *
+ *     354771
  ***************************************************************************
 */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -61,10 +49,10 @@ public class AsmTest {
 //        IfaceClassGenerator cl = NormMorphGraphUtils.getGraphByPackageName(IPersonOld.class.getPackage().getName(), new LinkedList<String>());
         ClassLoader myCl = graphManager.getContextClassLoader();
         NormClassLoader cl = new NormClassLoader(myCl,graphManager);
-        Class<IPerson> testc = (Class<IPerson>) cl.loadClass(IPerson.class);
-        IPerson<PERSON_TYPE> p = testc.newInstance();
+        Class<IPersonNormReady> testc = (Class<IPersonNormReady>) cl.loadClass(IPersonNormReady.class);
+        IPersonNormReady<PERSON_TYPE> p = testc.newInstance();
         p.setFirstName("sam");
-        System.out.println("firstName = " + p.getFirstName());
+//        System.out.println("firstName = " + p.getFirstName());
         // Set<HashMap<IContactInformation,List<String>>>
         ArrayList<String> aryLst = new ArrayList<String>();
         aryLst.add("One");
@@ -76,8 +64,8 @@ public class AsmTest {
         mhm.put(ci,aryLst);
         Set<HashMap<IContactInformation,List<String>>> mhs = new HashSet<HashMap<IContactInformation, List<String>>>();
         mhs.add(mhm);
-        p.setKnownAddresses(mhs);
-        mhs = p.getKnownAddresses();
+//        p.ed(mhs);
+//        mhs = p.getKnownAddresses();
 
 
 //        Class<IOrganization> pc = cl.loadClass(IOrganization.class.getCanonicalName(),true);

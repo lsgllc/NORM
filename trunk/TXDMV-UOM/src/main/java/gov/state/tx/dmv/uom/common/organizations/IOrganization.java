@@ -3,8 +3,6 @@ package gov.state.tx.dmv.uom.common.organizations;
 import gov.state.tx.dmv.uom.common.contact.CONTACT_TYPES;
 import gov.state.tx.dmv.uom.common.contact.IContactInformation;
 import gov.state.tx.dmv.uom.common.title.ITitle;
-import gov.state.tx.dmv.uom.common.person.IPerson;
-import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
 
 import java.io.Serializable;
 import java.util.Set;

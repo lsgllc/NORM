@@ -21,8 +21,8 @@ import java.util.UUID;
  * @date
  */
 public class CharId extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public CharId(UUID id) {
-        super(id);
+    public CharId(String canonicalName) {
+        super(INSTANCE_TYPE.CHAR, UUID.fromString(canonicalName));
     }
 
     public CharId() {

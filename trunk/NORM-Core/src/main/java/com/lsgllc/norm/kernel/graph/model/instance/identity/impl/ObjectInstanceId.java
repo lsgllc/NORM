@@ -22,11 +22,11 @@ import java.util.UUID;
  * @date
  */
 public class ObjectInstanceId extends AbstractNormInstanceId<INSTANCE_TYPE> {
-    public ObjectInstanceId(UUID id) {
-        super(id);
-    }
 
-    public ObjectInstanceId() {
+    public ObjectInstanceId(String canonicalName) {
+        super(INSTANCE_TYPE.OBJECT, UUID.fromString(canonicalName));
+    }
+    public ObjectInstanceId(){
         super(INSTANCE_TYPE.OBJECT);
     }
 }
