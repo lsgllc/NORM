@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../trunk/DynaMorph-API/DynaMorph-API.iml" filepath="$PROJECT_DIR$/../trunk/DynaMorph-API/DynaMorph-API.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../trunk/NORM-Core/NORM-Core.iml" filepath="$PROJECT_DIR$/../trunk/NORM-Core/NORM-Core.iml" group="Norm and modules" />
-      <module fileurl="file://$PROJECT_DIR$/../trunk/Norm.iml" filepath="$PROJECT_DIR$/../trunk/Norm.iml" group="Norm and modules" />
-      <module fileurl="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/TXDMV-UOM.iml" filepath="$PROJECT_DIR$/../trunk/TXDMV-UOM/TXDMV-UOM.iml" group="Norm and modules" />
-      <module fileurl="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/mavendemo.iml" filepath="$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/mavendemo.iml" />
+      <module fileurl="file://$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-API/DynaMorph-API.iml" filepath="$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-API/DynaMorph-API.iml" />
+      <module fileurl="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" filepath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" group="Norm and modules" />
+      <module fileurl="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/NORM-Core.iml" filepath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/NORM-Core.iml" group="Norm and modules" />
+      <module fileurl="file://$CLASS$/IdeaProjects/NORM/trunk/Norm.iml" filepath="$CLASS$/IdeaProjects/NORM/trunk/Norm.iml" group="Norm and modules" />
+      <module fileurl="file://$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/TXDMV-UOM.iml" filepath="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/TXDMV-UOM.iml" group="Norm and modules" />
     </modules>
   </component>
 </project>

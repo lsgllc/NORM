@@ -2,172 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" name="Default" comment="source consolidation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmClassReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/GenAsmMojo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmMojo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/test/java/com/lsgllc/mojo/genasm/GenAsmMojoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/IPersonNormReady.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_eaio_uuid_uuid_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ecyrd_speed4j_speed4j_0_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_eaio_uuid_uuid_3_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jamm_0_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_r09.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_0_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1_beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__edu_stanford_ppl_snaptree_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__geoGoogle_geoGoogle_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jsr173_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_all_1_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_cassandra_thrift_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cassandra_deps_avro_1_4_0_cassandra_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hectorclient_hector_core_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Merger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceAnnotationVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceClassVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenTraceMethodVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/PersonNative.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/PersonNormReady.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/PropertyFileMaker.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/NORM/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/NORM/.idea/libraries/Maven__junit_junit_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/log/fefLoader.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/log/stderr.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/log/stdout.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/Person_asm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/Person.uml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/log/fefLoader.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/log/stderr.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/log/stdout.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/Person.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/Person_asm.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/identity/INormContainerMarker.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/identity/INormContainerMarker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/identity/INormId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/identity/INormId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/identity/impl/AbstractNormId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/identity/impl/AbstractNormId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormMetaValue.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormObjectValue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/IPerson.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/IPersonNative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/test/java/gov/state/tx/dmv/uom/common/person/impl/PersonTest.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/test/java/gov/state/tx/dmv/uom/common/person/impl/PersonAfterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractAttributeInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractAttributeInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/types/impl/AbstractNormInstanceType.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/types/impl/AbstractNormInstanceType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AbstractNormMetaId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AbstractNormMetaId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractNormOWLInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractNormOWLInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/AbstractNormPredicate.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/AbstractNormPredicate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormThing.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormThing.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/typing/impl/AbstractNormType.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/typing/impl/AbstractNormType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/AbstractNormValue.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/AbstractNormValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/springsupport/AppContext.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/springsupport/AppContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/springsupport/ApplicationContextProvider.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/springsupport/ApplicationContextProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/test/java/gov/state/tx/dmv/uom/common/person/impl/AsmTest.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/test/java/gov/state/tx/dmv/uom/common/person/impl/AsmTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AttributeId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AttributeId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/BooleanId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/BooleanId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ByteId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ByteId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/CharId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/CharId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/DefaultNormCreds.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/DefaultNormCreds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/DoubleId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/DoubleId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/EntityId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/EntityId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/FloatId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/FloatId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IGovernmental.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IGovernmental.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormAttribute.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormAttribute.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/containment/INormContainer.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/containment/INormContainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormEntity.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/INormInstance.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/INormInstance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/INormInstanceId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/INormInstanceId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormObjectStore.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormObjectStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormOntology.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormOntology.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormPredicate.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormPredicate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormProperty.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/INormProperty.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormTriple.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/INormTriple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/INormValue.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/INormValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IOrganization.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IOrganization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IPrivate.java" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/organizations/IPrivate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/IntegerId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/IntegerId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/LongId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/LongId.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/NORM/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" afterPath="$PROJECT_DIR$/trunk/NORM-Core/NORM-Core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/Norm.iml" afterPath="$PROJECT_DIR$/trunk/Norm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/NormConnection.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/NormConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/NormDataMart.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/util/client/impl/NormDataMart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormScalarValue.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormScalarValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/NormTriple.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/NormTriple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/typing/impl/NormTypeId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/typing/impl/NormTypeId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ObjectInstanceId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ObjectInstanceId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectStoreId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectStoreId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologyId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologyId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologySegmentId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologySegmentId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/PropertyId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/PropertyId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ShortId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ShortId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/StringId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/StringId.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/TXDMV-UOM.iml" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/TXDMV-UOM.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ValueId.java" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ValueId.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/ant.xml" afterPath="$PROJECT_DIR$/NORM/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/src/profiles/openjpa/META-INF/spring/camel-context.xml" afterPath="$PROJECT_DIR$/trunk/NORM-Core/src/profiles/openjpa/META-INF/spring/camel-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/compiler.xml" afterPath="$PROJECT_DIR$/NORM/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/encodings.xml" afterPath="$PROJECT_DIR$/NORM/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/misc.xml" afterPath="$PROJECT_DIR$/NORM/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/modules.xml" afterPath="$PROJECT_DIR$/NORM/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/pom.xml" afterPath="$PROJECT_DIR$/trunk/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/NORM-Core/pom.xml" afterPath="$PROJECT_DIR$/trunk/NORM-Core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trunk/TXDMV-UOM/pom.xml" afterPath="$PROJECT_DIR$/trunk/TXDMV-UOM/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/vcs.xml" afterPath="$PROJECT_DIR$/NORM/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NORM/.idea/workspace.xml" afterPath="$PROJECT_DIR$/NORM/.idea/workspace.xml" />
     </list>
     <ignored path="norm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367337913376" ignored="false" />
+    <file path="/Dummy.txt" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339713222" ignored="false" />
     <file path="/Person_asm.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1355853510980" ignored="false" />
     <file path="/AbstractEntity.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1355855433225" ignored="false" />
     <file path="/ObjectStore.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1355855503101" ignored="false" />
@@ -200,6 +51,11 @@
     <file path="$PROJECT_DIR$/trunk/TXDMV-UOM/src/profiles/hibernate/META-INF/persistence.xml" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367337030173" ignored="false" />
     <file path="$PROJECT_DIR$/trunk/TXDMV-UOM/target/classes/META-INF/spring/camel-context.xml" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367337030173" ignored="false" />
     <file path="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/PersonNormReady.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367337459059" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/NORM/trunk/pom.xml" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339100395" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormInstance.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339100395" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/INormInstance.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339100395" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance.java" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339100395" ignored="false" />
+    <file path="/*.regexp" changelist="8c33be76-1e6d-436f-97b3-9bd4e0a47d55" time="1367339512020" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -528,7 +384,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="7" />
+    <option name="x" value="75" />
     <option name="y" value="22" />
     <option name="width" value="1680" />
     <option name="height" value="1050" />
@@ -1102,10 +958,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="genasm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1532,10 +1384,19 @@
       <created>1354557991832</created>
       <updated>1354557991832</updated>
     </task>
+    <task id="LOCAL-00001" summary="source consolidation">
+      <created>1367338694930</created>
+      <updated>1367338694930</updated>
+    </task>
+    <task id="LOCAL-00002" summary="source consolidation">
+      <created>1367339323731</created>
+      <updated>1367339323731</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="22" width="1680" height="1050" extended-state="6" />
+    <frame x="75" y="22" width="1680" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1576,7 +1437,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">

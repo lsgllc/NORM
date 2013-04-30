@@ -3,16 +3,16 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/../trunk/DynaMorph-API/target/generated-sources/annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/DynaMorph-API/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/NORM-Core/target/generated-sources/annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/NORM-Core/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/target/generated-sources/annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/DynaMorph-Core/target/generated-sources/annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/DynaMorph-Core/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/target/generated-sources/annotations" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-API/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-API/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-Core/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-Core/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/mavendemo/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/mavendemo/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
@@ -36,8 +36,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Byte-Code-Support" />
         <module name="DynaMorph-API" />
-        <module name="mavendemo" />
+        <module name="GenAsmMojo" />
         <module name="NORM-Core" />
         <module name="TXDMV-UOM" />
       </profile>

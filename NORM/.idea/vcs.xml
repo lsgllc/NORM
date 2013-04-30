@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$CLASS$/IdeaProjects/NORM" vcs="Git" />
+    <mapping directory="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo" vcs="svn" />
   </component>
 </project>
 

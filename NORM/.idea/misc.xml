@@ -4,7 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="Osmorc" url="file://$PROJECT_DIR$/../trunk/NORM-Core" />
+    <file type="Osmorc" url="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core" />
   </component>
   <component name="IdProvider" IDEtalkID="25C49C32FABFA8F08566B1EB40E6D03E" />
   <component name="JavadocGenerationManager">
@@ -27,10 +27,17 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../trunk/TXDMV-UOM/mavendemo/pom.xml" />
-        <option value="$PROJECT_DIR$/../trunk/TXDMV-UOM/pom.xml" />
-        <option value="$PROJECT_DIR$/../trunk/pom.xml" />
+        <option value="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/mavendemo/pom.xml" />
+        <option value="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/pom.xml" />
+        <option value="$CLASS$/IdeaProjects/NORM/trunk/pom.xml" />
+        <option value="$PROJECT_DIR$/Byte-Code-Support/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Byte-Code-Support/pom.xml" />
+        <option value="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/mavendemo/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ModuleEditorState">
@@ -43,7 +50,7 @@
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">
       <map>
-        <entry key="$PROJECT_DIR$/../trunk/DynaMorph-API">
+        <entry key="$CLASS$/IdeaProjects/NORM/trunk/DynaMorph-API">
           <value>
             <SvnBranchConfiguration>
               <option name="trunkUrl" value="" />
