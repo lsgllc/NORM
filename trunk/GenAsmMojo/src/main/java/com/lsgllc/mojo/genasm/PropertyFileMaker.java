@@ -47,17 +47,7 @@ public class PropertyFileMaker {
             return;
         }
         System.out.println("SETTING PROPERTY");
-        StringBuffer sb = new StringBuffer();
-        boolean pComma = false;
-        for (String s: strings){
-            if (s != null && !s.isEmpty()){
-                if (pComma){
-                    sb.append(",");
-                }
-                sb.append(s);
-                pComma = true;
-            }
-        }
+        StringBuffer sb = makeCommaSeparated(strings);
         if (sb.length()>0){
             System.out.println("PROPERTY IS SET");
             p.setProperty(this.propertyPrefix+key,sb.toString());
@@ -70,6 +60,25 @@ public class PropertyFileMaker {
         }
     }
 
+    private StringBuffer makeCommaSeparated(String[] strings) {
+        StringBuffer sb = new StringBuffer();
+        boolean pComma = false;
+        for (String s: strings){
+            if (s != null && !s.isEmpty()){
+                if (pComma){
+                    sb.append(",");
+                }
+                sb.append(s);
+                pComma = true;
+            }
+        }
+        return sb;
+    }
+
+    public boolean isCurrentKeySet(String key, String value){
+
+        return ((p.getProperty(key) != null) && p.getProperty(key).equals(value));
+    }
     public void saveAndClose() throws IOException {
         System.out.println("FLUSHING PROPERTYFILE");
         p.store(this.propertyFile,"GenAsmMojo PropertyFile: " + this.propertyFileName);
@@ -84,8 +93,10 @@ public class PropertyFileMaker {
     public void makeSplProperty(String key, Object rawVal, String splType) {
         String theInts =  p.getProperty(splType);
         String prefix = (theInts != null && !theInts.isEmpty())?",":"";
-        String val = (splType.equals("objs")?rawVal.toString():Integer.toString((Integer) rawVal));
-        p.setProperty(splType,theInts+prefix+val);
+        String val = (splType.equals("objs")?rawVal.toString():(!(rawVal instanceof Boolean)?Integer.toString((Integer) rawVal):((Boolean)rawVal?"true":"false")));
+        if (!(rawVal instanceof Boolean)){
+            p.setProperty(splType,theInts+prefix+val);
+        }
         makeProperty(key, new String[]{val});
     }
 
