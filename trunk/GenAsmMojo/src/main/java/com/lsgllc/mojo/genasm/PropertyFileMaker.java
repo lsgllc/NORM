@@ -31,7 +31,7 @@ public class PropertyFileMaker {
         this.propertyFileName = propertyFileName+".properties";
         this.propertyFile = new FileOutputStream(this.propertyFileName);
         if (propertyFile == null )  {
-            System.out.println("PROPERTY FILE NOT CREATED...");
+            //("PROPERTY FILE NOT CREATED...");
         }
         this.addPrefix = addPrefix;
         this.propertyPrefix =  (this.addPrefix)?propertyFileName.substring(propertyFileName.lastIndexOf('/')+1).replace("/",".")+".":"";
@@ -46,16 +46,16 @@ public class PropertyFileMaker {
         if (strings == null){
             return;
         }
-        System.out.println("SETTING PROPERTY");
+        //("SETTING PROPERTY");
         StringBuffer sb = makeCommaSeparated(strings);
         if (sb.length()>0){
-            System.out.println("PROPERTY IS SET");
+            //("PROPERTY IS SET");
             p.setProperty(this.propertyPrefix+key,sb.toString());
         }
         try {
             propertyFile.flush();
         } catch (IOException e) {
-            System.out.println("FLUSHING failed");
+            //("FLUSHING failed");
             e.printStackTrace();
         }
     }
@@ -80,13 +80,13 @@ public class PropertyFileMaker {
         return ((p.getProperty(key) != null) && p.getProperty(key).equals(value));
     }
     public void saveAndClose() throws IOException {
-        System.out.println("FLUSHING PROPERTYFILE");
+        //("FLUSHING PROPERTYFILE");
         p.store(this.propertyFile,"GenAsmMojo PropertyFile: " + this.propertyFileName);
         propertyFile.flush();
-        System.out.println("PROPERTYFILE FLUSHED");
-        System.out.println("CLOSING PROPERTYFILE");
+        //("PROPERTYFILE FLUSHED");
+        //("CLOSING PROPERTYFILE");
         propertyFile.close();
-        System.out.println("PROPERTYFILE CLOSED");
+        //("PROPERTYFILE CLOSED");
     }
 
 

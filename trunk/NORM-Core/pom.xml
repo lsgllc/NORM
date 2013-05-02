@@ -37,14 +37,21 @@
         <camel.osgi.export.pkg>com.lsgllc.camel.*</camel.osgi.export.pkg>
         <!-- to avoid us import bunch other package -->
         <camel.osgi.dynamic>*</camel.osgi.dynamic>
-        <norm.asm.java.model.src.location>
-            /Users/sameloyiv/IdeaProjects/NORM/trunk/TXDMV-UOM/src/main/java/gov/state/tx/dmv/uom/common/person/impl/Person.java
-        </norm.asm.java.model.src.location>
-        <norm.asm.propertyFilename>normBCPatterns.properties</norm.asm.propertyFilename>
+        <norm.asm.model.native.className>com.lsgllc.norm.kernel.core.normgen.templates.uom.common.person.impl.PersonNative</norm.asm.model.native.className>
+        <norm.asm.model.ready.className>com.lsgllc.norm.kernel.core.normgen.templates.uom.common.person.impl.PersonNormReady</norm.asm.model.ready.className>
+        <norm.asm.model.native.iface>com.lsgllc.norm.kernel.core.normgen.templates.uom.common.person.IPersonNative</norm.asm.model.native.iface>
+        <norm.asm.model.ready.iface>com.lsgllc.norm.kernel.core.normgen.templates.uom.common.person.IPersonNormReady</norm.asm.model.ready.iface>
+        <norm.asm.dest.rsrc.dir>${project.basedir}/src/main/resources</norm.asm.dest.rsrc.dir>
+        <norm.asm.dest.property.filename>norm-asm-java-template.txt</norm.asm.dest.property.filename>
+        <norm.asm.commentOutCode>false</norm.asm.commentOutCode>
     </properties>
 
     <dependencies>
 
+        <dependency>
+            <groupId>geoGoogle</groupId>
+            <artifactId>geoGoogle</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
@@ -203,6 +210,26 @@
                         <exclude>**/RunTest.*</exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.lsgllc.norm.mojo</groupId>
+                <artifactId>GenAsmMojo</artifactId>
+                <version>1.0a-SNAPSHOT</version>
+                <configuration>
+                    <!--<resourceDirectory>${norm.asm.dest.rsrc.dir}</resourceDirectory>-->
+                    <!--<propertyFilename>-->
+                    <!--${project.build.directory}-->
+                    <!--</propertyFilename>-->
+                    <!--<jm>${norm.asm.model.className}</jm>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!--<plugin>-->
                 <!--<groupId>com.lsgllc.norm.mojo</groupId>-->

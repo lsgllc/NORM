@@ -23,13 +23,19 @@ import org.objectweb.asm.util.TraceAnnotationVisitor;
  */
 public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
     private final Printer p;
+    private final PropertyFileMaker pfm;
 
     public NormGenAsmTraceAnnotationVisitor(final Printer p) {
         this(null, p);
     }
 
     public NormGenAsmTraceAnnotationVisitor(final AnnotationVisitor av, final Printer p) {
+        this( av, p, null);
+    }
+
+    public NormGenAsmTraceAnnotationVisitor(AnnotationVisitor av, Printer p, PropertyFileMaker propertyFileMaker) {
         super(Opcodes.ASM4, av);
+        this.pfm = propertyFileMaker;
         this.p = p;
     }
 

@@ -116,7 +116,7 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
         Printer p = this.p.visitClassAnnotation(desc, visible);
         AnnotationVisitor av = cv == null ? null : cv.visitAnnotation(desc,
                 visible);
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        return new NormGenAsmTraceAnnotationVisitor(av, p, this.propertyFileMaker);
     }
 
     @Override
@@ -148,7 +148,7 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
                 exceptions);
         MethodVisitor mv = cv == null ? null : cv.visitMethod(access, name,
                 desc, signature, exceptions);
-        return new NormGenTraceMethodVisitor(mv, p);
+        return new NormGenTraceMethodVisitor(mv, p,this.propertyFileMaker);
     }
 
     @Override

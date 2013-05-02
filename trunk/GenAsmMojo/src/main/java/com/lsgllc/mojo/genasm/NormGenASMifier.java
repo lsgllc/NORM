@@ -51,24 +51,21 @@ public class NormGenASMifier extends ASMifier {
         int i = 0;
         int flags = commentOutCode?0:ClassReader.SKIP_DEBUG;
         outfileName = outFilename;
-        System.out.println("outfileName = " + outfileName);
 
         commentOutCode = commOutCode;
         propertyFileMaker = getPropertyFileMaker();
 
         ClassReader cr;
         cr = new ClassReader(new FileInputStream(className));
-        System.out.println("cr.accepting  " + outfileName);
         cr.accept(new NormGenAsmTraceClassVisitor(null, new NormGenASMifier(outfileName), new PrintWriter(
                 new FileOutputStream(outFilename+".txt")),propertyFileMaker), flags);
-        System.out.println("ACCEPTED " + outfileName);
         propertyFileMaker.saveAndClose();
         propertyFileMaker = null;
     }
 
     private PropertyFileMaker getPropertyFileMaker() {
 //        if (outfileName == null || outfileName.isEmpty())   {
-//            System.out.println("*****ERROR******");
+//
 //            return null;
 //        }
         try {
@@ -115,7 +112,7 @@ public class NormGenASMifier extends ASMifier {
         for (Object obj: text){
             if (obj instanceof String){
                 StringBuffer line = new StringBuffer((String) obj);
-//                System.out.println("Starts with: '" + line.toString().charAt(0) + "'")  ;
+//                //("Starts with: '" + line.toString().charAt(0) + "'")  ;
                 if (!line.toString().startsWith("#")){
                     int newlneIdx = 0;
                     String prefx = "";
@@ -126,7 +123,7 @@ public class NormGenASMifier extends ASMifier {
                     line.replace(0,line.length(),"#" + prefx + line.toString().substring(newlneIdx));
                 }
                 newText.add(line.toString());
-//                System.out.println(line.toString());
+//                //(line.toString());
             } else if (obj instanceof List){
                 commentTextInner((List<Object>) obj, newText);
             }
@@ -194,7 +191,7 @@ public class NormGenASMifier extends ASMifier {
         isGetter = name.startsWith("get");
         isSetter = name.startsWith("set");
         isConstruct = name.equals("<init>");
-        String theKey = "visitMethod" + (isGetter?".getter.":(isSetter?".setter.":".construct.")) + (isGetter?getterAccess:(isSetter?setterAccess:constructAccess));
+        String theKey = "visitMethod" + (isGetter?".getter.":(isSetter?".setter.":".construct.")) + this.id;
         String uid = getUID(theKey);
         return uid;
 
@@ -203,7 +200,7 @@ public class NormGenASMifier extends ASMifier {
     public NormGenASMifier visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         key = getKey(name);
         methodStack.clear();
-        propertyFileMaker.makeProperty(key+".stack.", new String[]{name});
+        propertyFileMaker.makeProperty(key+".stack", new String[]{name});
 //        propertyFileMaker.makeSplProperty(uid + ".access." + uid, access, "ints");
 //        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
 //        propertyFileMaker.makeProperty("signature." + uid,new String[]{signature});
