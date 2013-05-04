@@ -44,6 +44,7 @@
         <norm.asm.dest.rsrc.dir>${project.basedir}/src/main/resources</norm.asm.dest.rsrc.dir>
         <norm.asm.dest.property.filename>norm-asm-java-template.txt</norm.asm.dest.property.filename>
         <norm.asm.commentOutCode>false</norm.asm.commentOutCode>
+        <norm.asm.propertiesFile.name>genasmcfg.properties</norm.asm.propertiesFile.name>
     </properties>
 
     <dependencies>

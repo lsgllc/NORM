@@ -24,23 +24,28 @@ import org.objectweb.asm.util.TraceAnnotationVisitor;
 public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
     private final Printer p;
     private final PropertyFileMaker pfm;
+    private final KeyMaker aKey;
 
-    public NormGenAsmTraceAnnotationVisitor(final Printer p) {
-        this(null, p);
-    }
+//    public NormGenAsmTraceAnnotationVisitor(final Printer p) {
+//        this(null, p);
+//    }
 
-    public NormGenAsmTraceAnnotationVisitor(final AnnotationVisitor av, final Printer p) {
-        this( av, p, null);
-    }
+//    public NormGenAsmTraceAnnotationVisitor(final AnnotationVisitor av, final Printer p, KeyMaker theKey) {
+//        this( av, p, null, null);
+//    }
 
-    public NormGenAsmTraceAnnotationVisitor(AnnotationVisitor av, Printer p, PropertyFileMaker propertyFileMaker) {
+    public NormGenAsmTraceAnnotationVisitor(AnnotationVisitor av, Printer p, final PropertyFileMaker propertyFileMaker,final KeyMaker theKey) {
         super(Opcodes.ASM4, av);
         this.pfm = propertyFileMaker;
         this.p = p;
+        this.aKey = theKey;
+
     }
 
     @Override
     public void visit(final String name, final Object value) {
+        ((NormGenASMifier)p).propertyFileMaker.makeProperty(this.aKey.buildKey() +".name" , new String[]{name});
+        ((NormGenASMifier)p).propertyFileMaker.makeSplProperty(this.aKey.buildKey() + ".value" , value,"objs");
         p.visit(name, value);
         super.visit(name, value);
     }
@@ -48,8 +53,13 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
     @Override
     public void visitEnum(final String name, final String desc,
                           final String value) {
+        this.aKey.push("enum");
+        pfm.makeProperty(this.aKey.buildKey() + ".name" , new String[]{name});
+        pfm.makeProperty(this.aKey.buildKey() + ".desc" , new String[]{desc});
+        pfm.makeProperty(this.aKey.buildKey() + ".value" , new String[]{value});
         p.visitEnum(name, desc, value);
         super.visitEnum(name, desc, value);
+        this.aKey.pop();
     }
 
     @Override
@@ -58,7 +68,10 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
         Printer p = this.p.visitAnnotation(name, desc);
         AnnotationVisitor av = this.av == null ? null : this.av
                 .visitAnnotation(name, desc);
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        this.aKey.push("annotation");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.aKey);
+        this.aKey.pop();
+        return pav;
     }
 
     @Override
@@ -66,7 +79,10 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
         Printer p = this.p.visitArray(name);
         AnnotationVisitor av = this.av == null ? null : this.av
                 .visitArray(name);
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        this.aKey.push("array");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.aKey);
+        this.aKey.pop();
+        return pav;
     }
 
     @Override

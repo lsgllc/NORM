@@ -24,19 +24,21 @@ public class NormGenTraceMethodVisitor extends MethodVisitor {
 
     public final Printer p;
     public final PropertyFileMaker pfm;
+    public final KeyMaker mKey;
 
-    public NormGenTraceMethodVisitor(final Printer p) {
-        this(null, p, null);
-    }
+//    public NormGenTraceMethodVisitor(final Printer p) {
+//        this(null, p, null);
+//    }
+//
+//    public NormGenTraceMethodVisitor(final MethodVisitor mv, final Printer p) {
+//        this(p);
+//    }
 
-    public NormGenTraceMethodVisitor(final MethodVisitor mv, final Printer p) {
-        this(p);
-    }
-
-    public NormGenTraceMethodVisitor(MethodVisitor mv, Printer p, PropertyFileMaker propertyFileMaker) {
+    public NormGenTraceMethodVisitor(MethodVisitor mv, Printer p,final PropertyFileMaker propertyFileMaker, final KeyMaker mKey) {
         super(Opcodes.ASM4, mv);
         this.p = p;
         this.pfm = propertyFileMaker;
+        this.mKey = mKey;
     }
 
     @Override
@@ -45,7 +47,10 @@ public class NormGenTraceMethodVisitor extends MethodVisitor {
         Printer p = this.p.visitMethodAnnotation(desc, visible);
         AnnotationVisitor av = mv == null ? null : mv.visitAnnotation(desc,
                 visible);
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        this.mKey.push("annotation");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.mKey);
+        this.mKey.pop();
+        return pav;
     }
 
     @Override
@@ -58,7 +63,10 @@ public class NormGenTraceMethodVisitor extends MethodVisitor {
     public AnnotationVisitor visitAnnotationDefault() {
         Printer p = this.p.visitAnnotationDefault();
         AnnotationVisitor av = mv == null ? null : mv.visitAnnotationDefault();
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        this.mKey.push("defaultAnnotation");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.mKey);
+        this.mKey.pop();
+        return pav;
     }
 
     @Override
@@ -67,7 +75,10 @@ public class NormGenTraceMethodVisitor extends MethodVisitor {
         Printer p = this.p.visitParameterAnnotation(parameter, desc, visible);
         AnnotationVisitor av = mv == null ? null : mv.visitParameterAnnotation(
                 parameter, desc, visible);
-        return new NormGenAsmTraceAnnotationVisitor(av, p);
+        this.mKey.push("parameterAnnotation");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.mKey);
+        this.mKey.pop();
+        return pav;
     }
 
     @Override

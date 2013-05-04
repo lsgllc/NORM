@@ -25,16 +25,13 @@ public class PropertyFileMaker {
     private final FileOutputStream propertyFile;
     private final Properties p;
     private final String propertyFileName;
-    private final String propertyPrefix;
-    private final boolean addPrefix;
-    public PropertyFileMaker(String propertyFileName, boolean addPrefix) throws FileNotFoundException {
+    public PropertyFileMaker(String propertyFileName) throws FileNotFoundException {
         this.propertyFileName = propertyFileName+".properties";
         this.propertyFile = new FileOutputStream(this.propertyFileName);
         if (propertyFile == null )  {
             //("PROPERTY FILE NOT CREATED...");
         }
-        this.addPrefix = addPrefix;
-        this.propertyPrefix =  (this.addPrefix)?propertyFileName.substring(propertyFileName.lastIndexOf('/')+1).replace("/",".")+".":"";
+//        this.propertyPrefix =  (this.addPrefix)?propertyFileName.substring(propertyFileName.lastIndexOf('/')+1).replace("/",".")+".":"";
 
         this.p = new Properties();
 
@@ -50,7 +47,7 @@ public class PropertyFileMaker {
         StringBuffer sb = makeCommaSeparated(strings);
         if (sb.length()>0){
             //("PROPERTY IS SET");
-            p.setProperty(this.propertyPrefix+key,sb.toString());
+            p.setProperty(key,sb.toString());
         }
         try {
             propertyFile.flush();

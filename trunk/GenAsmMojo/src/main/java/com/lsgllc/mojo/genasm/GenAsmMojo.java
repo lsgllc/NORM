@@ -19,6 +19,8 @@ package com.lsgllc.mojo.genasm;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 
+import java.io.IOException;
+
 /**
  * Goal which touches a timestamp file.
  *
@@ -37,10 +39,10 @@ public class GenAsmMojo
     public String resourceDirectory;
     /**
      * Location of the file.
-     * @parameter default-value="${norm.asm.dest.property.filename}"
+     * @parameter default-value="${norm.asm.propertiesFile.name}"
      * @required
      */
-    public String propertyFilename;
+    public String cfgPropertiesFilename;
     /**
      * Location of the file.
      * @parameter default-value="${norm.asm.model.native.className}"
@@ -80,22 +82,27 @@ public class GenAsmMojo
     public void execute()
             throws MojoExecutionException
     {
+        String implSrc1 = null;
+        String implSrc2 = null;
+        String iFaceSrc1 = null;
+        String iFaceSrc2 = null;
 
         if (jmNativeImpl != null && !jmNativeImpl.isEmpty()) {
-            processClassFile(jmNativeImpl);
+            implSrc1 = processClassFile(jmNativeImpl,null,null);
         }
         if (jmReadyImpl != null && !jmReadyImpl.isEmpty()) {
-            processClassFile(jmReadyImpl);
+            implSrc2 = processClassFile(jmReadyImpl,jmNativeImpl,cfgPropertiesFilename);
         }
         if (jmNativeIface != null && !jmNativeIface.isEmpty()) {
-            processClassFile(jmNativeIface);
+            iFaceSrc1 = processClassFile(jmNativeIface,null,null);
         }
         if (jmReadyIface != null && !jmReadyIface.isEmpty()) {
-            processClassFile(jmReadyIface);
+            iFaceSrc2 = processClassFile(jmReadyIface,jmNativeIface,cfgPropertiesFilename);
         }
-    }
+    }                //
 
-    private String processClassFile(String fileName) throws MojoExecutionException {
+
+    private String processClassFile(String fileName, String crusherPropFleName, String implSrc1) throws MojoExecutionException {
         if (fileName == null || fileName.isEmpty()) {
             return null;
         }
@@ -115,7 +122,7 @@ public class GenAsmMojo
 //            ClassPathHacker.addFile(f);
             getLog().info("attempting to load class  " + nameMod + " as a resource...");
 //            InputStream is = new FileInputStream(nameMod);
-            NormGenASMifier tcv = new NormGenASMifier(nameMod,canonicalPropertyFileNameMajor,commentOutCode);
+            NormGenASMifier tcv = new NormGenASMifier(nameMod,canonicalPropertyFileNameMajor,commentOutCode,crusherPropFleName,implSrc1);
         }
         catch ( Exception e )
         {

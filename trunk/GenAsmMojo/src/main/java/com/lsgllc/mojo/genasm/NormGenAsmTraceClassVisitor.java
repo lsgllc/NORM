@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class NormGenAsmTraceClassVisitor extends ClassVisitor {
 
-    private final PropertyFileMaker propertyFileMaker;
+    private final PropertyFileMaker pfm;
 
 
     /**
@@ -56,9 +56,6 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
      * @param pw
      *            the print writer to be used to print the class.
      */
-    private NormGenAsmTraceClassVisitor(final ClassVisitor cv, final PrintWriter pw, final PropertyFileMaker pFileMaker) {
-        this(cv, new Textifier(), pw,pFileMaker);
-    }
 
     /**
      * Constructs a new {@link TraceClassVisitor}.
@@ -73,18 +70,19 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
      *            you simply want to use the result via
      *            {@link Printer#getText()}, instead of printing it.
      */
+    public final KeyMaker cKey;
     public NormGenAsmTraceClassVisitor(final ClassVisitor cv, final Printer p,
-                             final PrintWriter pw,final PropertyFileMaker pFileMaker) {
+                             final PrintWriter pw,final PropertyFileMaker pFileMaker,final KeyMaker key) {
         super(Opcodes.ASM4, cv);
         this.pw = pw;
         this.p = p;
-        this.propertyFileMaker = pFileMaker;
+        this.pfm = pFileMaker;
+        this.cKey = key;
     }
 
-    public static List text = null;
-    public NormGenAsmTraceClassVisitor(final ClassVisitor cv, final Printer asMifier,final PrintWriter printWriter, List txt, final PropertyFileMaker pFileMaker) {
-        this(cv, asMifier, printWriter,pFileMaker);
-        text = txt;
+    public NormGenAsmTraceClassVisitor(final ClassVisitor cv, final Printer asMifier,final PrintWriter printWriter, List txt, final PropertyFileMaker pFileMaker, KeyMaker key) {
+        this(cv, asMifier, printWriter,pFileMaker, key);
+//        text = txt;
 
     }
 
@@ -116,7 +114,10 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
         Printer p = this.p.visitClassAnnotation(desc, visible);
         AnnotationVisitor av = cv == null ? null : cv.visitAnnotation(desc,
                 visible);
-        return new NormGenAsmTraceAnnotationVisitor(av, p, this.propertyFileMaker);
+        this.cKey.push("annotation");
+        AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.cKey);
+        this.cKey.pop();
+        return pav;
     }
 
     @Override
@@ -148,7 +149,14 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
                 exceptions);
         MethodVisitor mv = cv == null ? null : cv.visitMethod(access, name,
                 desc, signature, exceptions);
-        return new NormGenTraceMethodVisitor(mv, p,this.propertyFileMaker);
+        this.cKey.push("method");
+        pfm.makeProperty(this.cKey.buildKey() + ".name" , new String[]{name});
+        pfm.makeProperty(this.cKey.buildKey() + ".desc" , new String[]{desc});
+        pfm.makeProperty(this.cKey.buildKey() + ".signature" , new String[]{signature});
+        pfm.makeProperty(this.cKey.buildKey() + ".exceptions" ,exceptions);
+        MethodVisitor pav = new NormGenTraceMethodVisitor(mv, p,this.pfm, cKey);
+        this.cKey.pop();
+        return pav;
     }
 
     @Override

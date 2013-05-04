@@ -1,14 +1,11 @@
 package com.lsgllc.mojo.genasm;
 
-import org.junit.Ignore;
 import org.objectweb.asm.*;
 import org.objectweb.asm.util.*;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
-import java.util.UUID;
 
 /**
  * Created By: sameloyiv
@@ -29,12 +26,13 @@ import java.util.UUID;
 public class NormGenASMifier extends ASMifier {
 
     protected static boolean commentOutCode;
-    private static PropertyFileMaker propertyFileMaker;
+    public static PropertyFileMaker propertyFileMaker;
     private static String outfileName;
     private static Boolean isGetter = false;
     private static Boolean isSetter = false;
     private static Boolean isConstruct = false;
-    private static Stack<String> methodStack = new Stack<String>();
+    private static KeyMaker key = KeyMaker.getInstance();
+    private static Crusher crusher;
 
     //    public NormGenASMifier(String className, String outFilename) throws IOException {
 //        this(className,outFilename,false);
@@ -47,7 +45,7 @@ public class NormGenASMifier extends ASMifier {
         outfileName = ofn;
     }
 
-    public NormGenASMifier(String className, final String outFilename, boolean commOutCode) throws IOException {
+    public NormGenASMifier(String className, final String outFilename, boolean commOutCode, String crusherPropFleName, String implSrc1) throws IOException {
         int i = 0;
         int flags = commentOutCode?0:ClassReader.SKIP_DEBUG;
         outfileName = outFilename;
@@ -57,10 +55,18 @@ public class NormGenASMifier extends ASMifier {
 
         ClassReader cr;
         cr = new ClassReader(new FileInputStream(className));
+        key.push("Class");
         cr.accept(new NormGenAsmTraceClassVisitor(null, new NormGenASMifier(outfileName), new PrintWriter(
-                new FileOutputStream(outFilename+".txt")),propertyFileMaker), flags);
+                new FileOutputStream(outFilename+".txt")),propertyFileMaker,key), flags);
+        key.pop();
         propertyFileMaker.saveAndClose();
         propertyFileMaker = null;
+
+        try {
+            crusher = Crusher.getInstance(crusherPropFleName, implSrc1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private PropertyFileMaker getPropertyFileMaker() {
@@ -70,7 +76,7 @@ public class NormGenASMifier extends ASMifier {
 //        }
         try {
             if (propertyFileMaker == null) {
-                propertyFileMaker = new PropertyFileMaker(outfileName, true);
+                propertyFileMaker = new PropertyFileMaker(outfileName);
             }
             return propertyFileMaker;
         } catch (FileNotFoundException e) {
@@ -87,15 +93,21 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
-//        String uid = getUID("visit");
-//        propertyFileMaker.makeSplProperty("version." + uid, version, "ints");
-//        propertyFileMaker.makeSplProperty("access." + uid, access, "ints");
-//        propertyFileMaker.makeProperty("name." + uid, new String[]{name});
-//        propertyFileMaker.makeProperty("signature." + uid,new String[]{signature});
-//        propertyFileMaker.makeProperty("superName." + uid,new String[]{superName});
-//        propertyFileMaker.makeProperty("interfaces." + uid,interfaces);
+
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".version", version, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".access", access, "ints");
+        propertyFileMaker.makeProperty(key.buildKey() + ".name", new String[]{name});
+        propertyFileMaker.makeProperty(key.buildKey() + ".signature",new String[]{signature});
+        propertyFileMaker.makeProperty(key.buildKey() + ".superName",new String[]{superName});
+        propertyFileMaker.makeProperty(key.buildKey() + ".interfaces",interfaces);
+        key.push(name);
         super.visit(version, access, name, signature, superName, interfaces);
+        key.pop();
         //commentText();
+    }
+
+    private String makeKey(String name) {
+        return null;
     }
 
     private void commentText(List asmf){
@@ -144,13 +156,10 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public NormGenASMifier visitClassAnnotation(String desc, boolean visible) {
-//        String uid = getUID("visitClassAnnotation");
-//        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
-//        propertyFileMaker.makeProperty("visible." + uid,new String[]{((visible)?"true":"false")});
-//        desc = Merger.makeReplacable("classAnnotation..name");
-//        desc = Merger.makeReplacable("classAnnotation..name");
+        key.push("visitClassAnnotation");
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc", new String[]{desc});
         NormGenASMifier asmf = (NormGenASMifier) super.visitClassAnnotation(desc, visible);
-        //commentText();
+        key.pop();
         return asmf;
     }
 
@@ -162,11 +171,9 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitInnerClass(String name, String outerName, String innerName, int access) {
-//        String uid = getUID("visitInnerClass");
-//        propertyFileMaker.makeProperty("name." + uid,new String[]{name});
-//        propertyFileMaker.makeProperty("outerName." + uid,new String[]{outerName});
-//        propertyFileMaker.makeProperty("innerName." + uid,new String[]{innerName});
-        super.visitInnerClass(name, outerName, innerName, access);
+        key.push("innerClass");
+       super.visitInnerClass(name, outerName, innerName, access);
+        key.pop();
         //commentText();
     }
 
@@ -183,43 +190,35 @@ public class NormGenASMifier extends ASMifier {
         return asmf;
     }
 
-    private static int getterAccess = 0;
-    private static int setterAccess = 0;
-    private static int constructAccess = 0;
-    private static String key;
-    private String getKey(String name){
+    public String setBeanMethod(String name){
         isGetter = name.startsWith("get");
         isSetter = name.startsWith("set");
         isConstruct = name.equals("<init>");
-        String theKey = "visitMethod" + (isGetter?".getter.":(isSetter?".setter.":".construct.")) + this.id;
-        String uid = getUID(theKey);
-        return uid;
+        return (isGetter?"getter":(isSetter?"setter":"construct")) + this.id;
 
     }
     @Override
     public NormGenASMifier visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
-        key = getKey(name);
-        methodStack.clear();
-        propertyFileMaker.makeProperty(key+".stack", new String[]{name});
-//        propertyFileMaker.makeSplProperty(uid + ".access." + uid, access, "ints");
-//        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
-//        propertyFileMaker.makeProperty("signature." + uid,new String[]{signature});
-//        propertyFileMaker.makeProperty("exceptions." + uid,exceptions);
+        key.push("visitMethod." + setBeanMethod(name) + "." + name);
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc",new String[]{desc});
+        propertyFileMaker.makeProperty(key.buildKey() + ".signature",new String[]{signature});
+        propertyFileMaker.makeProperty(key.buildKey() + ".exceptions",exceptions);
         NormGenASMifier asmf = (NormGenASMifier) super.visitMethod(access, name, desc, signature, exceptions);
+        key.pop();
 //        commentText(null);
         return asmf;
     }
     private void incCounters(String parmName, String value){
         boolean propSet = propertyFileMaker.isCurrentKeySet(key + "." + parmName,value);
-        if (propSet){
-            if (isGetter){
-                getterAccess++;
-            } else if (isSetter){
-                setterAccess++;
-            } else {
-                constructAccess++;
-            }
-        }
+//        if (propSet){
+//            if (isGetter){
+//                getterAccess++;
+//            } else if (isSetter){
+//                setterAccess++;
+//            } else {
+//                constructAccess++;
+//            }
+//        }
 
     }
 
@@ -231,37 +230,32 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visit(String name, Object value) {
-        String uid = getUID("visit2");
-//        propertyFileMaker.makeProperty("name." + uid,new String[]{name});
-//        propertyFileMaker.makeSplProperty("value." + uid, value, "objs");
+        key.push("visit");
+        propertyFileMaker.makeProperty(key.buildKey() + ".name",new String[]{name});
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".value", value, "objs");
         super.visit(name, value);
+        key.pop();
 //        commentText(null);
     }
 
     @Override
     public void visitEnum(String name, String desc, String value) {
-        String uid = getUID("visitEnum");
-//        propertyFileMaker.makeProperty("name." + uid, new String[]{name});
-//        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
-//        propertyFileMaker.makeProperty("value." + uid,new String[]{value});
+        key.push("visitEnum" + "." + name);
+        propertyFileMaker.makeProperty(key.buildKey(), new String[]{name});
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc" ,new String[]{desc});
+        propertyFileMaker.makeProperty(key.buildKey() + ".value",new String[]{value});
         super.visitEnum(name, desc, value);
+        key.pop();
         //commentText();
-    }
-
-    private String getUID(String propName) {
-        String uid = UUID.randomUUID().toString();
-//        propertyFileMaker.makeProperty(propName +".UUID."+ uid,new String[]{uid});
-        return propName;
     }
 
     @Override
     public NormGenASMifier visitAnnotation(String name, String desc) {
-        String theKey = key + ".visitAnnotation";
-        propertyFileMaker.makeProperty(theKey + ".name" , new String[]{name});
-        propertyFileMaker.makeProperty(theKey + ".desc", new String[]{desc});
-        incCounters(theKey, "name");
-        incCounters(theKey,"desc");
+        key.push("visitAnnotation" + "." + name);
+        propertyFileMaker.makeProperty(key.buildKey(), new String[]{name});
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc" ,new String[]{desc});
         NormGenASMifier asmf = (NormGenASMifier) super.visitAnnotation(name, desc);
+        key.pop();
         return asmf;
     }
 
@@ -282,10 +276,13 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public NormGenASMifier visitFieldAnnotation(String desc, boolean visible) {
+        key.push("visitFieldAnnotation");
+        propertyFileMaker.makeProperty(key.buildKey(), new String[]{desc});
 //        String uid = getUID("visitFieldAnnotation");
 //        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
 //        propertyFileMaker.makeProperty("visible." + uid,new String[]{((visible)?"true":"false")});
         NormGenASMifier asmf = (NormGenASMifier) super.visitFieldAnnotation(desc, visible);
+        key.pop();
         return asmf;
     }
 
@@ -303,15 +300,18 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public NormGenASMifier visitAnnotationDefault() {
+        key.push("visitAnnotationDefault");
         NormGenASMifier asmf = (NormGenASMifier) super.visitAnnotationDefault();
+        key.pop();
         //commentText();
         return  asmf;
     }
 
     @Override
     public NormGenASMifier visitMethodAnnotation(String desc, boolean visible) {
+        key.push("visitMethodAnnotation");
 //        String uid = getUID("visitMethodAnnotation");
-//        propertyFileMaker.makeProperty("desc." + uid,new String[]{desc});
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc",new String[]{desc});
 //        propertyFileMaker.makeProperty("visible." + uid,new String[]{((visible)?"true":"false")});
         NormGenASMifier asmf = (NormGenASMifier) super.visitMethodAnnotation(desc, visible);
         //commentText();
@@ -320,14 +320,11 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public NormGenASMifier visitParameterAnnotation(int parameter, String desc, boolean visible) {
-        String theKey = key + ".visitParameterAnnotation";
-        propertyFileMaker.makeSplProperty(theKey + ".value", parameter, "ints");
-        propertyFileMaker.makeProperty(theKey + ".desc",new String[]{desc});
-        propertyFileMaker.makeProperty(theKey + ".visible",new String[]{((visible)?"true":"false")});
-        incCounters(theKey, "value");
-        incCounters(theKey, "desc");
-        incCounters(theKey, "visible");
+        key.push("visitParameterAnnotation");
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc",new String[]{desc});
+        propertyFileMaker.makeProperty(key.buildKey() + ".visible",new String[]{((visible)?"true":"false")});
         NormGenASMifier asmf = (NormGenASMifier) super.visitParameterAnnotation(parameter, desc, visible);
+        key.pop();
         //commentText();
         return asmf;
     }
@@ -352,41 +349,41 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitInsn(int opcode) {
-        String theKey = key + ".visitParameterAnnotation";
-        propertyFileMaker.makeSplProperty(theKey + ".opcode", opcode, "ints");
-        incCounters(theKey, "opcode");
+        key.push("insn");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode", opcode, "ints");
         super.visitInsn(opcode);
+        key.pop();
         //commentText();
     }
 
     @Override
     public void visitIntInsn(int opcode, int operand) {
 //        String uid = getUID("intInsn");
-//        propertyFileMaker.makeSplProperty("opcode." + uid, opcode, "ints");
-//        propertyFileMaker.makeSplProperty("operand." + uid, operand, "ints");
+        key.push("visitIntInsn");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode", opcode, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".operand" , operand, "ints");
         super.visitIntInsn(opcode, operand);
+        key.pop();
         //commentText();
     }
 
     @Override
     public void visitVarInsn(int opcode, int var) {
-        String theKey = key + ".visitVarInsn";
-        propertyFileMaker.makeSplProperty(theKey + ".opcode" , opcode, "ints");
-        propertyFileMaker.makeSplProperty(theKey + ".var", var, "ints");
-        incCounters(theKey, "opcode");
-        incCounters(theKey, "var");
+        key.push("visitVarInsn");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode", opcode, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".var" , var, "ints");
         super.visitVarInsn(opcode, var);
+        key.pop();
         //commentText();
     }
 
     @Override
     public void visitTypeInsn(int opcode, String type) {
-        String theKey = key + ".visitTypeInsn";
-        propertyFileMaker.makeSplProperty(theKey + ".opcode" , opcode, "ints");
-        propertyFileMaker.makeProperty(theKey + ".type" , new String[]{type});
-        incCounters(theKey, "opcode");
-        incCounters(theKey, "type");
+        key.push("visitTypeInsn");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode", opcode, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".type" , type, "ints");
         super.visitTypeInsn(opcode, type);
+        key.pop();
         //commentText();
     }
 
@@ -403,17 +400,14 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitMethodInsn(int opcode, String owner, String name, String desc) {
-        String theKey = key + ".visitMethodInsn";
-        propertyFileMaker.makeSplProperty(theKey + ".opcode" , opcode, "ints");
-        propertyFileMaker.makeProperty(theKey + ".owner" , new String[]{owner});
-        propertyFileMaker.makeProperty(theKey + ".name" , new String[]{name});
-        propertyFileMaker.makeProperty(theKey + ".desc" , new String[]{desc});
-        incCounters(theKey, "opcode");
-        incCounters(theKey, "owner");
-        incCounters(theKey, "name");
-        incCounters(theKey, "desc");
-
+        key.push("visitMethodInsn");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode", opcode, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".opcode" , opcode, "ints");
+        propertyFileMaker.makeProperty(key.buildKey() + ".owner" , new String[]{owner});
+        propertyFileMaker.makeProperty(key.buildKey() + ".name" , new String[]{name});
+        propertyFileMaker.makeProperty(key.buildKey() + ".desc" , new String[]{desc});
         super.visitMethodInsn(opcode, owner, name, desc);
+        key.pop();
         //commentText();
     }
 
@@ -501,12 +495,11 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitMaxs(int maxStack, int maxLocals) {
-        String theKey = key + ".visitMaxs";
-        propertyFileMaker.makeSplProperty(theKey + ".maxStack" , maxStack, "ints");
-        propertyFileMaker.makeSplProperty(theKey + ".maxLocals" , maxLocals, "ints");
-        incCounters(theKey, "maxStack");
-        incCounters(theKey, "maxLocals");
+        key.push("visitMaxs");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".maxStack", maxStack, "ints");
+        propertyFileMaker.makeSplProperty(key.buildKey() + ".maxLocals" , maxLocals, "ints");
         super.visitMaxs(maxStack, maxLocals);
+        key.pop();
         //commentText();
     }
 
