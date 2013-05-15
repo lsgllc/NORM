@@ -39,15 +39,17 @@ public class PropertyFileMaker {
         p.setProperty("objs","");
     }
 
-    public void makeProperty(String key, String[] strings) {
+    public KeyValuePair<String,String> makeProperty(String key, String[] strings) {
         if (strings == null){
-            return;
+            return null;
         }
+        String value = null;
         //("SETTING PROPERTY");
         StringBuffer sb = makeCommaSeparated(strings);
         if (sb.length()>0){
             //("PROPERTY IS SET");
-            p.setProperty(key,sb.toString());
+            value = sb.toString();
+            p.setProperty(key,value);
         }
         try {
             propertyFile.flush();
@@ -55,6 +57,7 @@ public class PropertyFileMaker {
             //("FLUSHING failed");
             e.printStackTrace();
         }
+        return new KeyValuePair<String, String>(key, value);
     }
 
     private StringBuffer makeCommaSeparated(String[] strings) {
@@ -87,7 +90,7 @@ public class PropertyFileMaker {
     }
 
 
-    public void makeSplProperty(String key, Object rawVal, String splType) {
+    public KeyValuePair<?,?> makeSplProperty(String key, Object rawVal, String splType) {
         String theInts =  p.getProperty(splType);
         String prefix = (theInts != null && !theInts.isEmpty())?",":"";
         String val = (splType.equals("objs")?rawVal.toString():(!(rawVal instanceof Boolean)?Integer.toString((Integer) rawVal):((Boolean)rawVal?"true":"false")));
@@ -95,6 +98,7 @@ public class PropertyFileMaker {
             p.setProperty(splType,theInts+prefix+val);
         }
         makeProperty(key, new String[]{val});
+        return new KeyValuePair<Object, Object>(key,val);
     }
 
 }

@@ -214,5 +214,6 @@ public class NormGenTraceMethodVisitor extends MethodVisitor {
     public void visitEnd() {
         p.visitMethodEnd();
         super.visitEnd();
+        this.mKey.pop();
     }
 }

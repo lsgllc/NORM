@@ -21,42 +21,77 @@ import java.util.Stack;
 public class KeyMaker extends Stack<String> {
     private static KeyMaker ourInstance = new KeyMaker();
 
-    public static KeyMaker getInstance() {
-        return ourInstance;
+    public static synchronized KeyMaker  getInstance() {
+        synchronized (ourInstance){
+            ourInstance.clear();
+            return ourInstance;
+        }
     }
 
     private KeyMaker() {
     }
+
+    @Override
+    public String push(String item) {
+        int iOfS = item.lastIndexOf("/");
+        String theItem = (iOfS >= 0)?item.substring(iOfS + 1):item;
+        synchronized (ourInstance){
+            return super.push(theItem);
+        }
+    }
+
     @Override
     public synchronized String pop() {
 
-        return this.pop() + ".";
+        synchronized (ourInstance){
+            return super.pop();
+        }
     }
 
-    public synchronized void saveArray(String[] array){
+    @Override
+    public synchronized String peek() {
+        synchronized (ourInstance){
+            return super.peek();
+        }
+    }
+
+    @Override
+    public boolean empty() {
+        synchronized (ourInstance){
+            return super.empty();
+        }
+    }
+
+    public void saveArray(String[] array){
         for (String s: array){
             this.push(s);
         }
     }
 
-    public synchronized String buildKey(){
-        if (this.isEmpty()){
-            return null;
+    public String buildKey(){
+
+        synchronized (ourInstance){
+            if (super.isEmpty()){
+                return null;
+            }
         }
         StringBuffer results = new StringBuffer();
         return getKey(results);
     }
 
     private String getKey(StringBuffer results) {
-        if (this.isEmpty()){
-            return null;
+        System.out.println("get key: " + results.toString());
+        String nextComponent = null;
+        System.out.println("bout to pop..." );
+        nextComponent = ourInstance.pop();
+        if (!super.isEmpty())  {
+            getKey(results);
         }
-        String component = this.pop();
-        String result = getKey(results);
-        if (result != null){
-            results.append(result).append(component);
+        if (nextComponent != null){
+            System.out.println("Component found: " + nextComponent);
+            results.append((super.elementCount > 0)?".":"").append(nextComponent);
+            ourInstance.push(nextComponent);
         }
-        this.push(component);
         return results.toString();
     }
 }

@@ -1,0 +1,85 @@
+package asm.com.lsgllc.norm.kernel.core.normgen.templates.uom.common.person.impl;
+import java.util.*;
+import org.objectweb.asm.*;
+import org.objectweb.asm.attrs.*;
+public class PersonNativeDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter cw = new ClassWriter(0);
+FieldVisitor fv;
+MethodVisitor mv;
+AnnotationVisitor av0;
+
+cw.visit(V1_5, ACC_PUBLIC + ACC_SUPER, "com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNative", "Ljava/lang/Object;Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/IPersonNative<Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/PERSON_TYPE;>;Lcom/lsgllc/norm/client/persistence/INormPersistable;", "java/lang/Object", new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/IPersonNative", "com/lsgllc/norm/client/persistence/INormPersistable" });
+
+{
+mv = cw.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(1, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getType", "()Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/PERSON_TYPE;", null, new String[] { "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitInsn(ARETURN);
+mv.visitMaxs(1, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setType", "(Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/PERSON_TYPE;)V", null, null);
+mv.visitCode();
+mv.visitInsn(RETURN);
+mv.visitMaxs(0, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getFirstName", "()Ljava/lang/String;", null, new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/UOMSpecifiedException", "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitTypeInsn(NEW, "java/lang/Object");
+mv.visitInsn(DUP);
+mv.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(2, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setFirstName", "(Ljava/lang/String;)V", null, new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/UOMSpecifiedException", "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitInsn(RETURN);
+mv.visitMaxs(0, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getKnownAddresses", "()Ljava/util/Set;", "()Ljava/util/Set<Ljava/util/HashMap<Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/contact/IContactInformation;Ljava/util/List<Ljava/lang/String;>;>;>;", new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/UOMSpecifiedException", "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitTypeInsn(NEW, "java/lang/Object");
+mv.visitInsn(DUP);
+mv.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+mv.visitTypeInsn(CHECKCAST, "java/util/Set");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(2, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setKnownAddresses", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljava/util/HashMap<Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/contact/IContactInformation;Ljava/util/List<Ljava/lang/String;>;>;>;)V", new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/UOMSpecifiedException", "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitInsn(RETURN);
+mv.visitMaxs(0, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getAllVehicles", "()Ljava/util/List;", "()Ljava/util/List<Lcom/lsgllc/norm/kernel/core/normgen/templates/uom/common/vehicle/IVehicle;>;", new String[] { "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/UOMSpecifiedException", "com/lsgllc/norm/kernel/core/normgen/templates/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitTypeInsn(NEW, "java/lang/Object");
+mv.visitInsn(DUP);
+mv.visitMethodInsn(INVOKESPECIAL, "java/lang/Object", "<init>", "()V");
+mv.visitTypeInsn(CHECKCAST, "java/util/List");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(2, 1);
+mv.visitEnd();
+}

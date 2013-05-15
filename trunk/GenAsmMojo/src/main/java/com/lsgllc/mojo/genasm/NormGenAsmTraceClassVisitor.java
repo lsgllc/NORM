@@ -80,19 +80,15 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
         this.cKey = key;
     }
 
-    public NormGenAsmTraceClassVisitor(final ClassVisitor cv, final Printer asMifier,final PrintWriter printWriter, List txt, final PropertyFileMaker pFileMaker, KeyMaker key) {
-        this(cv, asMifier, printWriter,pFileMaker, key);
-//        text = txt;
-
-    }
 
     @Override
     public void visit(final int version, final int access, final String name,
                       final String signature, final String superName,
                       final String[] interfaces) {
-
         p.visit(version, access, name, signature, superName, interfaces);
+//        this.cKey.push(name);
         super.visit(version, access, name, signature, superName, interfaces);
+//        this.cKey.pop();
     }
 
     @Override
@@ -149,19 +145,13 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
                 exceptions);
         MethodVisitor mv = cv == null ? null : cv.visitMethod(access, name,
                 desc, signature, exceptions);
-        this.cKey.push("method");
-        pfm.makeProperty(this.cKey.buildKey() + ".name" , new String[]{name});
-        pfm.makeProperty(this.cKey.buildKey() + ".desc" , new String[]{desc});
-        pfm.makeProperty(this.cKey.buildKey() + ".signature" , new String[]{signature});
-        pfm.makeProperty(this.cKey.buildKey() + ".exceptions" ,exceptions);
         MethodVisitor pav = new NormGenTraceMethodVisitor(mv, p,this.pfm, cKey);
-        this.cKey.pop();
+//        this.cKey.pop();
         return pav;
     }
 
     @Override
     public void visitEnd() {
-        p.visitClassEnd();
         if (pw != null) {
 //            this.text.
 
@@ -169,4 +159,5 @@ public class NormGenAsmTraceClassVisitor extends ClassVisitor {
             pw.flush();
         }
         super.visitEnd();
+        cKey.pop();
     }}

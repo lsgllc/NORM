@@ -44,7 +44,8 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
 
     @Override
     public void visit(final String name, final Object value) {
-        ((NormGenASMifier)p).propertyFileMaker.makeProperty(this.aKey.buildKey() +".name" , new String[]{name});
+        this.aKey.push(name);
+        ((NormGenASMifier)p).propertyFileMaker.makeProperty(this.aKey.buildKey() , new String[]{name});
         ((NormGenASMifier)p).propertyFileMaker.makeSplProperty(this.aKey.buildKey() + ".value" , value,"objs");
         p.visit(name, value);
         super.visit(name, value);
@@ -53,7 +54,7 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
     @Override
     public void visitEnum(final String name, final String desc,
                           final String value) {
-        this.aKey.push("enum");
+        this.aKey.push("enum." + name);
         pfm.makeProperty(this.aKey.buildKey() + ".name" , new String[]{name});
         pfm.makeProperty(this.aKey.buildKey() + ".desc" , new String[]{desc});
         pfm.makeProperty(this.aKey.buildKey() + ".value" , new String[]{value});
@@ -68,7 +69,7 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
         Printer p = this.p.visitAnnotation(name, desc);
         AnnotationVisitor av = this.av == null ? null : this.av
                 .visitAnnotation(name, desc);
-        this.aKey.push("annotation");
+        this.aKey.push(name);
         AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.aKey);
         this.aKey.pop();
         return pav;
@@ -79,7 +80,7 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
         Printer p = this.p.visitArray(name);
         AnnotationVisitor av = this.av == null ? null : this.av
                 .visitArray(name);
-        this.aKey.push("array");
+        this.aKey.push("array." + name);
         AnnotationVisitor pav = new NormGenAsmTraceAnnotationVisitor(av, p, this.pfm, this.aKey);
         this.aKey.pop();
         return pav;
@@ -89,6 +90,7 @@ public class NormGenAsmTraceAnnotationVisitor extends AnnotationVisitor {
     public void visitEnd() {
         p.visitAnnotationEnd();
         super.visitEnd();
+        this.aKey.pop();
     }
 
 }

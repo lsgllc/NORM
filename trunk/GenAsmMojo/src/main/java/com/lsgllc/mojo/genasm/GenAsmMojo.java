@@ -18,6 +18,7 @@ package com.lsgllc.mojo.genasm;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
+import org.objectweb.asm.Opcodes;
 
 import java.io.IOException;
 
@@ -79,6 +80,8 @@ public class GenAsmMojo
      * @required
      */
     public String outputDir;
+
+    private static final KeyMaker km = KeyMaker.getInstance();
     public void execute()
             throws MojoExecutionException
     {
@@ -91,13 +94,13 @@ public class GenAsmMojo
             implSrc1 = processClassFile(jmNativeImpl,null,null);
         }
         if (jmReadyImpl != null && !jmReadyImpl.isEmpty()) {
-            implSrc2 = processClassFile(jmReadyImpl,jmNativeImpl,cfgPropertiesFilename);
+            implSrc2 = processClassFile(jmReadyImpl,resourceDirectory + "/" + cfgPropertiesFilename,implSrc1);
         }
         if (jmNativeIface != null && !jmNativeIface.isEmpty()) {
             iFaceSrc1 = processClassFile(jmNativeIface,null,null);
         }
         if (jmReadyIface != null && !jmReadyIface.isEmpty()) {
-            iFaceSrc2 = processClassFile(jmReadyIface,jmNativeIface,cfgPropertiesFilename);
+            iFaceSrc2 = processClassFile(jmReadyIface,resourceDirectory + "/" + cfgPropertiesFilename,iFaceSrc1);
         }
     }                //
 
@@ -122,10 +125,12 @@ public class GenAsmMojo
 //            ClassPathHacker.addFile(f);
             getLog().info("attempting to load class  " + nameMod + " as a resource...");
 //            InputStream is = new FileInputStream(nameMod);
-            NormGenASMifier tcv = new NormGenASMifier(nameMod,canonicalPropertyFileNameMajor,commentOutCode,crusherPropFleName,implSrc1);
+            km.clear();
+            new NormGenASMifier(Opcodes.ASM4, nameMod, 0, canonicalPropertyFileNameMajor,commentOutCode,crusherPropFleName,implSrc1,km, true);
         }
         catch ( Exception e )
         {
+            e.printStackTrace();
             throw new MojoExecutionException( "Error Creating Byte Code properties file" , e );
         }
         finally
