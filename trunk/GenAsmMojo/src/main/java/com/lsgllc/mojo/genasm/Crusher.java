@@ -129,27 +129,27 @@ public class Crusher {
         return null;
     }
 
-    public KeyValuePair makeRuntimeSubstitutions(KeyValuePair<String,String> crusherOutput, String remove,DELIM_TYPE dt ) {
+    public KeyValuePair makeRuntimeSubstitutions(KeyValuePair<String,String> crusherOutput, String remove ) {
         int index = 0;
         if (remove != null && remove.length()>0){
-            index = remove.indexOf("\"L");
+            index = remove.indexOf("L");
             if (index < 0){
                 index = 0;
             } else {
-                index += 2;
+                index += 1;
             }
         }
         StringBuffer target = new StringBuffer();
         if (index > 0){
-            target.append(crusherOutput.val.substring(0,index-1));
+            target.append(crusherOutput.val.substring(0,index));
         }
         target.append(runtimeSubString);
-        if (index > 0){
-            int lstQuoteIndex = remove.lastIndexOf("\"");
-            if ((lstQuoteIndex > index) && lstQuoteIndex <= remove.length()){
-                target.append(remove.substring(lstQuoteIndex));
-            }
-        }
+//        if (index > 0){
+//            int lstQuoteIndex = remove.lastIndexOf("/");
+//            if ((remove.length() > index) && lstQuoteIndex <= remove.length()){
+//                target.append(remove.substring(lstQuoteIndex));
+//            }
+//        }
         crusherOutput.val = target.toString();
         return crusherOutput;
     }

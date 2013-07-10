@@ -25,6 +25,7 @@ import java.util.List;
  */
 public class NormGenASMifier extends ASMifier {
 
+    Type at;
     protected static boolean commentOutCode;
     public static PropertyFileMaker propertyFileMaker;
     private static String outfileName;
@@ -120,9 +121,9 @@ public class NormGenASMifier extends ASMifier {
         super.visit(version, access, name, signature, superName, interfaces);
         String theKey = key.buildKey();
 
-        name =  processSimple(new KeyValuePair<String,String>(theKey + ".name", name),0,Crusher.DELIM_TYPE.RUNTIME,"crusher.class.name.substitution.string");
-        signature = processSignature(new KeyValuePair<String, String>(theKey + ".signature", signature),superName);
-        superName = processSimple(new KeyValuePair<String,String>(theKey + ".superName", superName),0,Crusher.DELIM_TYPE.RUNTIME,"crusher.class.super.substitution.string");
+        name =  processSimple(new KeyValuePair<String,String>(theKey + ".name", name));
+        signature = processSignature(new KeyValuePair<String, String>(theKey + ".signature", "signature"));
+        superName = processSimple(new KeyValuePair<String,String>(theKey + ".superName", "superName"));
 //        propertyFileMaker.makeSplProperty(theKey + ".version", version, "ints");
 //        kvp = propertyFileMaker.makeSplProperty(theKey + ".access", access, "ints");
 //        kvp = propertyFileMaker.makeProperty(theKey + ".name", new String[]{name});
@@ -146,7 +147,7 @@ public class NormGenASMifier extends ASMifier {
 
     }
 
-    private String  processSignature(KeyValuePair<String, String> kvp,String excluded) {
+    private String  processSignature(KeyValuePair<String, String> kvp) {
         KeyValuePair<String, String> locKvp = null;
         if (crusher != null){
             locKvp = crusher.subtract(kvp,true,Crusher.DELIM_TYPE.RUNTIME);
@@ -155,9 +156,9 @@ public class NormGenASMifier extends ASMifier {
         return kvp.val;
     }
 
-    private String processSimple(KeyValuePair<String,String> kvp, int index, Crusher.DELIM_TYPE dt, String propKey) {
+    private String processSimple(KeyValuePair<String,String> kvp) {
         if (crusher != null){
-            kvp = crusher.makeRuntimeSubstitutions(kvp,null,Crusher.DELIM_TYPE.RUNTIME);
+            kvp = crusher.makeRuntimeSubstitutions(kvp,null);
         }
         propertyFileMaker.makeProperty(kvp.key,new String[]{kvp.val});
         return kvp.val;
@@ -272,13 +273,14 @@ public class NormGenASMifier extends ASMifier {
     public NormGenASMifier visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
         key.push("visitMethod." + setBeanMethod(name));
         NormGenASMifier asmf = (NormGenASMifier) super.visitMethod(access, name, desc, signature, exceptions);
-        propertyFileMaker.makeProperty(key.buildKey() + ".value.desc",new String[]{desc});
-        propertyFileMaker.makeProperty(key.buildKey() + ".value.signature",new String[]{signature});
-
-        desc = Crusher.staticDelim + key.buildKey() + ".code.desc" + Crusher.staticDelim;
-        propertyFileMaker.makeProperty(key.buildKey() + ".code.desc",new String[]{desc});
-        signature = Crusher.staticDelim + key.buildKey() + ".code.signature" + Crusher.staticDelim;
-        propertyFileMaker.makeProperty(key.buildKey() + ".code.signature",new String[]{signature});
+        propertyFileMaker.makeProperty(key.buildKey() + ".value.desc",new String[]{"desc"});
+        propertyFileMaker.makeProperty(key.buildKey() + ".value.signature",new String[]{(signature != null)?"signature":"null"});
+        propertyFileMaker.makeProperty(key.buildKey() + ".value.exceptions",new String[]{(exceptions != null)?"exceptions":"null"});
+//
+//        desc = Crusher.staticDelim + key.buildKey() + ".code.desc" + Crusher.staticDelim;
+//        propertyFileMaker.makeProperty(key.buildKey() + ".code.desc",new String[]{desc});
+//        signature = Crusher.staticDelim + key.buildKey() + ".code.signature" + Crusher.staticDelim;
+//        propertyFileMaker.makeProperty(key.buildKey() + ".code.signature",new String[]{signature});
 //        key.pop();
 //        commentText(null);
         return asmf;
@@ -490,22 +492,28 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitMethodInsn(int opcode, String owner, String name, String desc) {
-        key.push("visitMethodInsn." + visitMethodInsnCntr++ );
-        super.visitMethodInsn(opcode, owner, name, desc);
-        propertyFileMaker.makeProperty(key.buildKey() + ".value.name" , new String[]{name});
-        if (!owner.contains("java/")){
-            owner = owner.substring(0,owner.lastIndexOf("/") + 1) + Crusher.runtimeSubString;
-            propertyFileMaker.makeProperty(key.buildKey() + ".value.owner" , new String[]{owner});
+        key.push("visitMethodInsn"  );
+        if (!isConstruct) {
+            key.push(Integer.toString(visitMethodInsnCntr++));
         }
+        super.visitMethodInsn(opcode, owner, name, desc);
+        propertyFileMaker.makeProperty(key.buildKey() + ".value.name" , new String[]{"name"});
+        if (!owner.contains("java/")){
+            owner = (isConstruct?Crusher.staticDelim :Crusher.runtimeDelim ) + key.buildKey() +  ".norm.asmgen" + (isConstruct?".supername":".classname") + (isConstruct?Crusher.staticDelim :Crusher.runtimeDelim);
+        }
+        propertyFileMaker.makeProperty(key.buildKey() + ".value.owner" , new String[]{owner});
         propertyFileMaker.makeProperty(key.buildKey() + ".value.desc" , new String[]{desc});
-        name = Crusher.staticDelim + key.buildKey() + ".code.name" + Crusher.staticDelim;
+        name = Crusher.staticDelim + key.buildKey() + ".value.name" + Crusher.staticDelim;
         propertyFileMaker.makeProperty(key.buildKey() + ".code.name" , new String[]{name});
-        owner = Crusher.staticDelim + key.buildKey() + ".code.owner" + Crusher.staticDelim;
+        owner = Crusher.staticDelim + key.buildKey() + ".value.owner" + Crusher.staticDelim;
         propertyFileMaker.makeProperty(key.buildKey() + ".code.owner" , new String[]{owner});
-        desc = Crusher.staticDelim + key.buildKey() + ".code.desc" + Crusher.staticDelim;
+        desc = Crusher.staticDelim + key.buildKey() + ".value.desc" + Crusher.staticDelim;
         propertyFileMaker.makeProperty(key.buildKey() + ".code.desc" , new String[]{desc});
 
         key.pop();
+        if (!isConstruct) {
+            key.pop();
+        }
         //commentText();
     }
 
@@ -533,13 +541,21 @@ public class NormGenASMifier extends ASMifier {
 
     @Override
     public void visitLdcInsn(Object cst) {
-        if (cst instanceof String){
+        String sctsub = null;
+
+        if (cst instanceof String || (cst instanceof Type)){
             key.push("visitLdcInsn." + visitLdcInsnCntr++);
         }
+        if (cst instanceof Type){
+           sctsub = ((Type)cst).getDescriptor();
+        } else if (cst instanceof String){
+            sctsub = (String)cst;
+        }
+
         super.visitLdcInsn(cst);
-        if (cst instanceof String){
-            KeyValuePair res =  new KeyValuePair(null,null);
-            res = crusher.makeRuntimeSubstitutions(res, (String) cst,null);
+        if (cst instanceof String || (cst instanceof Type)){
+            KeyValuePair res =  new KeyValuePair(null,sctsub);
+            res = crusher.makeRuntimeSubstitutions(res, sctsub);
             propertyFileMaker.makeProperty(key.buildKey() + ".value.name" , new String[]{res.val.toString()});
             cst = Crusher.runtimeSubString;
             key.pop();

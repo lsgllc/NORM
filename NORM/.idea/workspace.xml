@@ -1,38 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecc44a46-d5b3-4037-948e-e6df221fc9e6" name="Default" comment="moved templates to NORM-core;TODO: generify names.">
-      <change type="NEW" beforePath="" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/KeyValuePair.java" />
-      <change type="NEW" beforePath="" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/test/resources/PersonNormReady.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+    <list default="true" id="ecc44a46-d5b3-4037-948e-e6df221fc9e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmMojo.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmMojo.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/IPersonNormReady.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/IPersonNormReady.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/KeyMaker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/KeyMaker.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceAnnotationVisitor.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceAnnotationVisitor.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceClassVisitor.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenAsmTraceClassVisitor.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenTraceMethodVisitor.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenTraceMethodVisitor.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNormReady.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNormReady.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/PropertyFileMaker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/PropertyFileMaker.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/genasmcfg.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/genasmcfg.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NORM.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367611096749" ignored="false" />
-    <file path="/Dummy.txt" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368618264632" ignored="false" />
+    <file path="/pom.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1369155884754" ignored="false" />
+    <file path="/Dummy.txt" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493393958" ignored="false" />
     <file path="/IfaceClassGenerator.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1355947513627" ignored="false" />
     <file path="/*.regexp" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367450582056" ignored="false" />
     <file path="/openjpa-kernel-2.2.1.pom" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1355949472987" ignored="false" />
@@ -455,8 +436,8 @@
     <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/data/row2.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1365598952682" ignored="false" />
     <file path="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/src/profiles/openjpa/META-INF/persistence.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1365598952732" ignored="false" />
     <file path="$CLASS$/IdeaProjects/NORM/trunk/src/site/site.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1365598952677" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xml.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366213688848" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366213688849" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xml.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
     <file path="/MyMojo.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366313472922" ignored="false" />
     <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/test/resources/log4j.properties" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366323041518" ignored="false" />
     <file path="/GenAsmMojo.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367901921483" ignored="false" />
@@ -550,7 +531,7 @@
     <file path="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractOntologySegment.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366664867161" ignored="false" />
     <file path="/norm-asm-properties.properties" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366667160710" ignored="false" />
     <file path="/NormGenAsmTraceClassVisitor.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367871644690" ignored="false" />
-    <file path="/NormGenASMifier.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368627310395" ignored="false" />
+    <file path="/NormGenASMifier.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368738671604" ignored="false" />
     <file path="/NormGenPrintwriter.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366669022907" ignored="false" />
     <file path="/GenAsmClassReader.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366740360518" ignored="false" />
     <file path="/Ontology.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1366758921510" ignored="false" />
@@ -577,13 +558,92 @@
     <file path="/IPersonNormReady.txt" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367547675369" ignored="false" />
     <file path="/PersonNative.txt" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367548913505" ignored="false" />
     <file path="/PersonNormReady.txt" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367551997134" ignored="false" />
-    <file path="/Crusher.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368626864108" ignored="false" />
+    <file path="/Crusher.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368717800020" ignored="false" />
     <file path="/ClassPathMaker.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367682812467" ignored="false" />
     <file path="/KeyMaker.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367875811926" ignored="false" />
     <file path="/KeyMaker2.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367686901453" ignored="false" />
     <file path="/PersonNormReady.properties" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1368572821564" ignored="false" />
     <file path="/KeyValuePair.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367954388413" ignored="false" />
     <file path="/genasmcfg.properties" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1367982045252" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/MFADAS-svn/pom.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1369155884754" ignored="false" />
+    <file path="$CLASS$/afarts/cicsesi-10.1.pom" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1369154014636" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/MFADAS-ns/pom.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1369154460404" ignored="false" />
+    <file path="$CLASS$/IdeaProjects/MFADAS-svn/src/main/java/gov/state/tx/dmv/mfadas/dal/AddressData.java" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1369157375359" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xsl" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431637" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.4.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431637" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-partialresponse_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431637" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431637" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.3.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431637" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf_core.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/xslt-schema.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-core.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/facelets_jsf_core.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/settings-1.0.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/profiles-1.0.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-strict.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/j2ee_1_4.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431638" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/spring.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/orm_1_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/catalog.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/html5/xhtml5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/orm_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jspxml.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431639" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jspxml.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431640" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431640" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/xml.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431640" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic_2_0.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431640" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf-ui.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431640" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431641" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/ui.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431641" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_6.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431641" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431642" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_1_2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431642" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431642" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431642" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/FlexCompilerSchema.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.7.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.6.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf-ui-2_0.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-fn.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf_core_2_0.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431643" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.core.facelets.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.3.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.fn.facelets.tld" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.1.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_client_1_2.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.8.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facelettaglibrary_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.7.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/mojarra_ext.taglib.xml" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.6.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesuicomponent_2_0.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431644" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.5.xsd" changelist="ecc44a46-d5b3-4037-948e-e6df221fc9e6" time="1373493431645" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -640,7 +700,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java" line="132" class="com.lsgllc.mojo.genasm.Crusher" package="com.lsgllc.mojo.genasm">
+      <breakpoint url="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" line="549" class="com.lsgllc.mojo.genasm.NormGenASMifier" package="com.lsgllc.mojo.genasm">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -655,7 +715,22 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" line="540" class="com.lsgllc.mojo.genasm.NormGenASMifier" package="com.lsgllc.mojo.genasm">
+      <breakpoint url="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" line="545" class="com.lsgllc.mojo.genasm.NormGenASMifier" package="com.lsgllc.mojo.genasm">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java" line="133" class="com.lsgllc.mojo.genasm.Crusher" package="com.lsgllc.mojo.genasm">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -684,7 +759,25 @@
       <file leaf-file-name="NormGenASMifier.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="540" column="0" selection-start="20438" selection-end="20438" vertical-scroll-proportion="-6.4615383">
+            <state line="504" column="122" selection-start="18905" selection-end="18905" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="135" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.1399689">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Type.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/4.1/asm-4.1-sources.jar!/org/objectweb/asm/Type.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="13" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -693,16 +786,7 @@
       <file leaf-file-name="ASMifier.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-util/4.1/asm-util-4.1-sources.jar!/org/objectweb/asm/util/ASMifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="307" column="20" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonNormReady.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNormReady.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="40" selection-start="3468" selection-end="3482" vertical-scroll-proportion="0.0">
+            <state line="986" column="42" selection-start="32088" selection-end="32088" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -729,10 +813,8 @@
       <file leaf-file-name="Crusher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="0" selection-start="5447" selection-end="5447" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="152" column="0" selection-start="5865" selection-end="6126" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -740,25 +822,16 @@
       <file leaf-file-name="PersonNormReady.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="31" selection-start="1386" selection-end="1388" vertical-scroll-proportion="0.0">
+            <state line="35" column="38" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="PersonNormReady.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/test/resources/PersonNormReady.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonNormReady.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="158" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.69875777">
+            <state line="73" column="137" selection-start="6741" selection-end="6741" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -797,8 +870,8 @@
         <option value="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/genasmcfg.properties" />
         <option value="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties" />
         <option value="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt" />
-        <option value="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" />
         <option value="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java" />
+        <option value="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" />
         <option value="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" />
       </list>
     </option>
@@ -937,6 +1010,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1174" />
@@ -967,7 +1041,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -985,18 +1059,8 @@
               <option name="myItemId" value="Norm and modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM-Core" />
+              <option name="myItemId" value="TXDMV-UOM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1008,163 +1072,11 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Norm and modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GenAsmMojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GenAsmMojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GenAsmMojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsgllc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Norm and modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GenAsmMojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1175,8 +1087,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$CLASS$/IdeaProjects/pom.xml" />
+    <property name="options.lastSelected" value="vcs.Subversion" />
+    <property name="last_opened_file_path" value="$CLASS$/IdeaProjects/NORM" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -1568,7 +1480,11 @@
       <created>1367691743141</created>
       <updated>1367691743141</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First cut of auto gen of asm template.">
+      <created>1368627643935</created>
+      <updated>1368627643936</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -1605,14 +1521,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
+    <frame x="8" y="22" width="1920" height="1174" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31154454" sideWeight="0.14611006" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31912878" sideWeight="0.92102456" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.43643263" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4592803" sideWeight="0.49573106" order="3" side_tool="false" content_ui="tabs" />
@@ -1620,19 +1535,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32264957" sideWeight="0.1905016" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32922202" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31163287" sideWeight="0.22632575" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1664888" sideWeight="0.67045456" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19583778" sideWeight="0.16888046" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16595517" sideWeight="0.670778" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19637139" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583778" sideWeight="0.670778" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31723484" sideWeight="0.80949837" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31912878" sideWeight="0.92102456" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542694" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1679,7 +1596,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="new property key with some kinda bug..." />
+    <option name="LAST_COMMIT_MESSAGE" value="First cut of auto gen of asm template." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1696,6 +1613,7 @@
     <MESSAGE value="genasmmojo new code" />
     <MESSAGE value="moved templates to NORM-core;TODO: generify names." />
     <MESSAGE value="new property key with some kinda bug..." />
+    <MESSAGE value="First cut of auto gen of asm template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1709,21 +1627,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/KeyMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/PropertyFileMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-util/4.1/asm-util-4.1-sources.jar!/org/objectweb/asm/util/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="139" column="30" selection-start="6090" selection-end="6090" vertical-scroll-proportion="0.0" />
@@ -1734,21 +1637,50 @@
         <state line="149" column="0" selection-start="5052" selection-end="5052" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmMojo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/4.1/asm-4.1-sources.jar!/org/objectweb/asm/ClassReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="2651" selection-end="2651" vertical-scroll-proportion="2.0373135" />
+        <state line="529" column="16" selection-start="19606" selection-end="19606" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-util/4.1/asm-util-4.1-sources.jar!/org/objectweb/asm/util/ASMifier.java">
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNormReady.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="20" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
+        <state line="81" column="40" selection-start="3468" selection-end="3482" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/test/resources/PersonNormReady.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.02283105" />
+      </provider>
+    </entry>
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/GenAsmMojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="4525" selection-end="4525" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="504" column="122" selection-start="18905" selection-end="18905" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/4.1/asm-all-4.1-sources.jar!/org/objectweb/asm/util/ASMifier.java">
+    <entry file="file://$CLASS$/.m2/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="307" column="20" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
+        <state line="43" column="22" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.48018292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/4.1/asm-4.1-sources.jar!/org/objectweb/asm/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-util/4.1/asm-util-4.1-sources.jar!/org/objectweb/asm/util/ASMifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="986" column="42" selection-start="32088" selection-end="32088" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1760,53 +1692,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/4.1/asm-4.1-sources.jar!/org/objectweb/asm/ClassReader.java">
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="529" column="16" selection-start="19606" selection-end="19606" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/normgen/templates/uom/common/person/impl/PersonNormReady.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="40" selection-start="3468" selection-end="3482" vertical-scroll-proportion="0.0">
+        <state line="152" column="0" selection-start="5865" selection-end="6126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="1386" selection-end="1388" vertical-scroll-proportion="0.0">
+        <state line="35" column="38" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/4.1/asm-all-4.1-sources.jar!/org/objectweb/asm/util/ASMifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="540" column="0" selection-start="20438" selection-end="20438" vertical-scroll-proportion="-6.4615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/Crusher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="0" selection-start="5447" selection-end="5447" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/test/resources/PersonNormReady.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="307" column="20" selection-start="10126" selection-end="10126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="158" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.69875777">
+        <state line="73" column="137" selection-start="6741" selection-end="6741" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="135" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.1399689">
           <folding />
         </state>
       </provider>
