@@ -29,6 +29,8 @@
         <maven-bundle-version>2.3.7</maven-bundle-version>
         <openjpa-version>2.2.1</openjpa-version>
         <commons-logging-version>1.1.1</commons-logging-version>
+        <camel-version>2.12.2</camel-version>
+
     </properties>
 
     <!--<reporting>-->

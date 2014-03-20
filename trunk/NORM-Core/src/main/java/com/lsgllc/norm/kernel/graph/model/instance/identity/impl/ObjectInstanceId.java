@@ -24,7 +24,7 @@ import java.util.UUID;
 public class ObjectInstanceId extends AbstractNormInstanceId<INSTANCE_TYPE> {
 
     public ObjectInstanceId(String canonicalName) {
-        super(INSTANCE_TYPE.OBJECT, UUID.fromString(canonicalName));
+        super(INSTANCE_TYPE.OBJECT, UUID.randomUUID());
     }
     public ObjectInstanceId(){
         super(INSTANCE_TYPE.OBJECT);

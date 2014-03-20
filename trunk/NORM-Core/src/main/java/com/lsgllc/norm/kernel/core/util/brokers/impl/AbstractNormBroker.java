@@ -66,7 +66,17 @@ public class AbstractNormBroker<K, V> extends ConcurrentSkipListMap<K,V> impleme
     }
 
     @Override
+    public boolean useRawUri() {
+        return false;
+    }
+
+    @Override
     public EndpointConfiguration createConfiguration(String uri) throws Exception {
+        return null;
+    }
+
+    @Override
+    public ComponentConfiguration createComponentConfiguration() {
         return null;
     }
 

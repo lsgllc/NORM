@@ -6,7 +6,7 @@ package gov.state.tx.dmv.uom.exceptions;
  * Time: 8:40 AM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description

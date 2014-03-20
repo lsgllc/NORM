@@ -11,7 +11,7 @@ import java.util.Map;
  * Time: 1:29 PM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description

@@ -34,33 +34,33 @@ import java.util.Set;
 public interface IPersonNormReady<T extends PERSON_TYPE> extends INormPersistable {
 
 
-    @ReturnedValueOntology(ontology = "T:<PERSON_TYPE>:type")
+    @ReturnedValueOntology(ontology = "gov.state.tx.dmv.uom.common.person.PERSON_TYPE:type")
     T getType() throws NormNotFoundException;
 
-    void setType(@ParameterOntology(ontology = "String:firstName")T personType);
-    @ReturnedValueOntology(ontology = "String:firstName")
+    void setType(@ParameterOntology(ontology = "gov.state.tx.dmv.uom.common.person.PERSON_TYPE:type")T personType);
+    @ReturnedValueOntology(ontology = "java.lang.String:firstName")
     String getFirstName() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
-    void setFirstName(@ParameterOntology(ontology = "String:firstName")String firstName) throws UOMSpecifiedException, StrangeAndWonderfulException;
-    @ReturnedValueOntology(ontology = "String:middleName")
+    void setFirstName(@ParameterOntology(ontology = "java.lang.String:firstName")String firstName) throws UOMSpecifiedException, StrangeAndWonderfulException;
+    @ReturnedValueOntology(ontology = "java.lang.String:middleName")
     String getMiddleName() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
-    void setMiddleName(@ParameterOntology(ontology = "String:middleName")String middleName)throws UOMSpecifiedException, StrangeAndWonderfulException;
+    void setMiddleName(@ParameterOntology(ontology = "java.lang.String:middleName")String middleName)throws UOMSpecifiedException, StrangeAndWonderfulException;
 
     //
-    @ReturnedValueOntology(ontology = "String:lastName")
+    @ReturnedValueOntology(ontology = "java.lang.String:lastName")
     String getLastName() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
     void setLastName(@ParameterOntology(ontology = "String:lastName")String lastName)throws UOMSpecifiedException, StrangeAndWonderfulException;
 
-    @ReturnedValueOntology(ontology = "String:salutation")
+    @ReturnedValueOntology(ontology = "java.lang.String:salutation")
     String getSalutation() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
     void setSalutation(@ParameterOntology(ontology = "String:salutation")String salutation)throws UOMSpecifiedException, StrangeAndWonderfulException;
 
-    @ReturnedValueOntology(ontology = "String:nameSuffix")
+    @ReturnedValueOntology(ontology = "java.lang.String:nameSuffix")
     String getNameSuffix() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
-    void setNameSuffix(@ParameterOntology(ontology = "String:nameSuffix")String middleName)throws UOMSpecifiedException, StrangeAndWonderfulException;
-    @ReturnedValueOntology(ontology = "Set<HashMap<IContactInformation,List<String>>>:knownAddresses")
+    void setNameSuffix(@ParameterOntology(ontology = "java.lang.String:nameSuffix")String middleName)throws UOMSpecifiedException, StrangeAndWonderfulException;
+    @ReturnedValueOntology(ontology = "java.util.Set<java.util.HashMap<gov.state.tx.dmv.uom.common.contact.IContactInformation,java.util.List<java.lang.String>>>:knownAddresses")
     Set<HashMap<IContactInformation,List<String>>> getKnownAddresses() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
-    void setKnownAddresses(@ParameterOntology(ontology = "Set<HashMap<IContactInformation,List<String>>>:knownAddresses")Set<HashMap<IContactInformation, List<String>>> knownAddresses)throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
-    @ReturnedValueOntology(ontology = "List<IVehicle>:allVehicles")
-    List<IVehicle> getAllVehicles() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
+    void setKnownAddresses(@ParameterOntology(ontology = "java.util.Set<java.util.HashMap<gov.state.tx.dmv.uom.common.contact.IContactInformation,java.util.List<java.lang.String>>>:knownAddresses")Set<HashMap<IContactInformation, List<String>>> knownAddresses)throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
+    @ReturnedValueOntology(ontology = "java.util.List<gov.state.tx.dmv.uom.common.vehicle.IVehicle>:allVehicles")
+    List<gov.state.tx.dmv.uom.common.vehicle.IVehicle> getAllVehicles() throws UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException;
 
 }

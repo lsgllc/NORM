@@ -11,7 +11,7 @@ import com.lsgllc.norm.kernel.graph.things.INormThing;
  * Time: 1:39 PM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description
@@ -36,26 +36,5 @@ public  class AbstractOntologySegment<K extends OntologySegmentId,V extends INor
 
     public AbstractOntologySegment(V thing) {
         super((K) new OntologySegmentId(), thing);
-    }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof AbstractOntologySegment)) return false;
-        if (!super.equals(o)) return false;
-
-        AbstractOntologySegment that = (AbstractOntologySegment) o;
-
-        if (!entities.equals(that.entities)) return false;
-        if (!uri.equals(that.uri)) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + uri.hashCode();
-        result = 31 * result + entities.hashCode();
-        return result;
     }
 }

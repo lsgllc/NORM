@@ -10,7 +10,7 @@ import java.io.Serializable;
  * Time: 1:11 PM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description

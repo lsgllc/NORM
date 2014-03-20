@@ -1,0 +1,242 @@
+package asm.gov.state.tx.dmv.uom.common.person.impl;
+import java.util.*;
+import org.objectweb.asm.*;
+import org.objectweb.asm.attrs.*;
+public class PersonNormReadyDump implements Opcodes {
+
+public static byte[] dump () throws Exception {
+
+ClassWriter cw = new ClassWriter(0);
+FieldVisitor fv;
+MethodVisitor mv;
+AnnotationVisitor av0;
+
+cw.visit(V1_7, ACC_PUBLIC + ACC_SUPER, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "<T:Lcom/lsgllc/norm/kernel/graph/model/instance/types/INSTANCE_TYPE;K:Lcom/lsgllc/norm/kernel/graph/model/instance/identity/impl/ObjectInstanceId;V::Lcom/lsgllc/norm/kernel/graph/model/instance/INormInstance<**TT;>;>Lcom/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance<TK;TV;TT;>;Lgov/state/tx/dmv/uom/common/person/IPersonNormReady<Lgov/state/tx/dmv/uom/common/person/PERSON_TYPE;>;Lcom/lsgllc/norm/client/persistence/INormPersistable;", "com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance", new String[] { "gov/state/tx/dmv/uom/common/person/IPersonNormReady", "com/lsgllc/norm/client/persistence/INormPersistable" });
+
+{
+mv = cw.visitMethod(ACC_PUBLIC, "<init>", "()V", null, null);
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitLdcInsn(Type.getType("Lgov/state/tx/dmv/uom/common/person/impl/PersonNormReady;"));
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitInsn(ACONST_NULL);
+mv.visitMethodInsn(INVOKESPECIAL, "com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance", "<init>", "(Ljava/lang/String;Ljava/lang/Object;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getType", "()Lgov/state/tx/dmv/uom/common/person/PERSON_TYPE;", null, new String[] { "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("type");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "gov/state/tx/dmv/uom/common/person/PERSON_TYPE");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getFirstName", "()Ljava/lang/String;", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("firstName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getMiddleName", "()Ljava/lang/String;", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("middleName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getLastName", "()Ljava/lang/String;", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("lastName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getSalutation", "()Ljava/lang/String;", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("salutation");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getNameSuffix", "()Ljava/lang/String;", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("nameSuffix");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/lang/String");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getKnownAddresses", "()Ljava/util/Set;", "()Ljava/util/Set<Ljava/util/HashMap<Lgov/state/tx/dmv/uom/common/contact/IContactInformation;Ljava/util/List<Ljava/lang/String;>;>;>;", new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("knownAddresses");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/util/Set");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "getAllVehicles", "()Ljava/util/List;", "()Ljava/util/List<Lgov/state/tx/dmv/uom/common/vehicle/IVehicle;>;", new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("allVehicles");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;");
+mv.visitTypeInsn(CHECKCAST, "java/util/List");
+mv.visitInsn(ARETURN);
+mv.visitMaxs(3, 1);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setLastName", "(Ljava/lang/String;)V", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("lastName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setType", "(Lgov/state/tx/dmv/uom/common/person/PERSON_TYPE;)V", null, null);
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("type");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setFirstName", "(Ljava/lang/String;)V", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("firstName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setMiddleName", "(Ljava/lang/String;)V", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("middleName");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setSalutation", "(Ljava/lang/String;)V", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("salutation");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setNameSuffix", "(Ljava/lang/String;)V", null, new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("nameSuffix");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+{
+mv = cw.visitMethod(ACC_PUBLIC, "setKnownAddresses", "(Ljava/util/Set;)V", "(Ljava/util/Set<Ljava/util/HashMap<Lgov/state/tx/dmv/uom/common/contact/IContactInformation;Ljava/util/List<Ljava/lang/String;>;>;>;)V", new String[] { "gov/state/tx/dmv/uom/exceptions/UOMSpecifiedException", "gov/state/tx/dmv/uom/exceptions/StrangeAndWonderfulException", "com/lsgllc/norm/util/exceptions/NormNotFoundException" });
+mv.visitCode();
+mv.visitVarInsn(ALOAD, 0);
+mv.visitVarInsn(ALOAD, 1);
+mv.visitVarInsn(ALOAD, 0);
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Object", "getClass", "()Ljava/lang/Class;");
+mv.visitMethodInsn(INVOKEVIRTUAL, "java/lang/Class", "getCanonicalName", "()Ljava/lang/String;");
+mv.visitLdcInsn("knownAddresses");
+mv.visitMethodInsn(INVOKEVIRTUAL, "gov/state/tx/dmv/uom/common/person/impl/PersonNormReady", "setValue", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V");
+mv.visitInsn(RETURN);
+mv.visitMaxs(4, 2);
+mv.visitEnd();
+}
+cw.visitEnd();
+
+return cw.toByteArray();
+}
+}

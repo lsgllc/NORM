@@ -16,7 +16,7 @@ import java.io.InputStream;
  * Time: 3:58 PM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description
@@ -30,6 +30,65 @@ import java.io.InputStream;
 public class NormClassReader extends ClassReader {
 
     protected OntologyBroker graphManager;
+
+    public NormClassReader(byte[] b) {
+        super(b);
+    }
+
+    public NormClassReader(byte[] b, int off, int len) {
+        super(b, off, len);
+    }
+
+    @Override
+    public int getItemCount() {
+        return super.getItemCount();
+    }
+
+    @Override
+    public int getMaxStringLength() {
+        return super.getMaxStringLength();
+    }
+
+    @Override
+    public int readByte(int index) {
+        return super.readByte(index);
+    }
+
+    @Override
+    public int readUnsignedShort(int index) {
+        return super.readUnsignedShort(index);
+    }
+
+    @Override
+    public short readShort(int index) {
+        return super.readShort(index);
+    }
+
+    @Override
+    public int readInt(int index) {
+        return super.readInt(index);
+    }
+
+    @Override
+    public long readLong(int index) {
+        return super.readLong(index);
+    }
+
+    @Override
+    public String readUTF8(int index, char[] buf) {
+        return super.readUTF8(index, buf);
+    }
+
+    @Override
+    public String readClass(int index, char[] buf) {
+        return super.readClass(index, buf);
+    }
+
+    @Override
+    public Object readConst(int item, char[] buf) {
+        return super.readConst(item, buf);
+    }
+
     protected String name;
     public NormClassReader(InputStream inputStream) throws IOException {
         super(inputStream);

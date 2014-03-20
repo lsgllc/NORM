@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * Time: 11:16 AM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description
@@ -24,4 +24,23 @@ public abstract class AbstractNormHashMap<K ,V> extends ConcurrentSkipListMap<K,
 
     private V theThing = null;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AbstractNormHashMap)) return false;
+        if (!super.equals(o)) return false;
+
+        AbstractNormHashMap that = (AbstractNormHashMap) o;
+
+        if (!theThing.equals(that.theThing)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + theThing.hashCode();
+        return result;
+    }
 }

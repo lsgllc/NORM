@@ -6,7 +6,7 @@ package gov.state.tx.nmvtis.file.coding;
  * Time: 3:24 PM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description

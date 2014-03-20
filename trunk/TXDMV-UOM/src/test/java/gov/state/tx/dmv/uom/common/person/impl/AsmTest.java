@@ -10,6 +10,9 @@ package gov.state.tx.dmv.uom.common.person.impl;
 //import com.lsgllc.data.store.domain.person.impl.PersonOld;
 import com.lsgllc.norm.kernel.core.normgen.NormClassLoader;
 import com.lsgllc.norm.kernel.core.util.brokers.impl.OntologyBroker;
+import com.lsgllc.norm.kernel.graph.things.INormAttribute;
+import com.lsgllc.norm.kernel.graph.things.INormEntity;
+import com.lsgllc.norm.util.exceptions.NormNotFoundException;
 import gov.state.tx.dmv.uom.common.contact.IContactInformation;
 import gov.state.tx.dmv.uom.common.person.IPersonNormReady;
 import gov.state.tx.dmv.uom.common.person.PERSON_TYPE;
@@ -35,7 +38,7 @@ import java.util.*;
 */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:META-INF/spring/camel-context.xml" })
-public class AsmTest {
+public class AsmTest  {
 
 //    cl.
     @Autowired
@@ -44,7 +47,7 @@ public class AsmTest {
     public final Logger logger = Logger.getLogger(this.getClass());
 
     @Test
-    public void myAsmTest() throws Exception, IllegalAccessException, InstantiationException, ClassNotFoundException, UOMSpecifiedException, StrangeAndWonderfulException {
+    public void myAsmTest() throws Exception, IllegalAccessException, InstantiationException, ClassNotFoundException, UOMSpecifiedException, StrangeAndWonderfulException, NormNotFoundException {
 
 //        IfaceClassGenerator cl = NormMorphGraphUtils.getGraphByPackageName(IPersonOld.class.getPackage().getName(), new LinkedList<String>());
         ClassLoader myCl = graphManager.getContextClassLoader();
@@ -52,18 +55,18 @@ public class AsmTest {
         Class<IPersonNormReady> testc = (Class<IPersonNormReady>) cl.loadClass(IPersonNormReady.class);
         IPersonNormReady<PERSON_TYPE> p = testc.newInstance();
         p.setFirstName("sam");
-//        System.out.println("firstName = " + p.getFirstName());
+        System.out.println("firstName = " + p.getFirstName());
         // Set<HashMap<IContactInformation,List<String>>>
         ArrayList<String> aryLst = new ArrayList<String>();
         aryLst.add("One");
         aryLst.add("Two");
         aryLst.add("Three");
-        Class<IContactInformation> testd = (Class<IContactInformation>) cl.loadClass(IContactInformation.class);
-        IContactInformation ci = testd.newInstance();
-        HashMap<IContactInformation,List<String>> mhm = new HashMap<IContactInformation, List<String>>();
-        mhm.put(ci,aryLst);
-        Set<HashMap<IContactInformation,List<String>>> mhs = new HashSet<HashMap<IContactInformation, List<String>>>();
-        mhs.add(mhm);
+//        Class<IContactInformation> testd = (Class<IContactInformation>) cl.loadClass(IContactInformation.class);
+//        IContactInformation ci = testd.newInstance();
+//        HashMap<IContactInformation,List<String>> mhm = new HashMap<IContactInformation, List<String>>();
+//        mhm.put(ci,aryLst);
+//        Set<HashMap<IContactInformation,List<String>>> mhs = new HashSet<HashMap<IContactInformation, List<String>>>();
+//        mhs.add(mhm);
 //        p.ed(mhs);
 //        mhs = p.getKnownAddresses();
 

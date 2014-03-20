@@ -14,7 +14,7 @@ import java.util.UUID;
  * Time: 11:35 AM
  * <p/>
  * <p/>
- * (c) Texas Department of Motor Vehicles  2012
+ * (c) Loy Services Group, LLC. 2008-2014
  * ---------------------------------------------------------------------
  * Change History:
  * Name		    Date		Description
@@ -27,7 +27,7 @@ import java.util.UUID;
 public class AbstractNormId<TT> implements IHasNormType<TT>,INormId<TT>{
     protected UUID id;
     protected INormType<TT> type = null;
-    private NormIDBroker manager = (NormIDBroker) AppContext.getCtx().getBean("idManager");
+//    private NormIDBroker manager = (NormIDBroker) AppContext.getCtx().getBean("idManager");
 
 
     public AbstractNormId(UUID id) {

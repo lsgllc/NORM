@@ -2,14 +2,14 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="NORM-Core-1.0a-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="NORMCore" bundleVersion="1.0.0.0a-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="NORM-Core-1.0a-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="NORMCore" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Description" value="Universal Data Model No Object-Relational Mapping Database" />
           <property key="Bundle-Vendor" value="Loy Services Group, LLC" />
           <property key="Private-Package" value="com.lsgllc.*" />
           <property key="Import-Package" value="*" />
           <property key="Bundle-Name" value="NORM_Core" />
-          <property key="Include-Resource" value="META-INF/persistence.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/persistence.xml,META-INF/spring/camel-context.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/spring/camel-context.xml,{features.xml=$MODULE_DIR$/src/main/resources/features.xml},{genasmcfg.properties=$MODULE_DIR$/src/main/resources/genasmcfg.properties},{IPersonNative.properties=$MODULE_DIR$/src/main/resources/IPersonNative.properties},{IPersonNative.txt=$MODULE_DIR$/src/main/resources/IPersonNative.txt},{IPersonNormReady.properties=$MODULE_DIR$/src/main/resources/IPersonNormReady.properties},{IPersonNormReady.txt=$MODULE_DIR$/src/main/resources/IPersonNormReady.txt},{log4j.properties=$MODULE_DIR$/src/main/resources/log4j.properties},{META-INF/LICENSE.txt=$MODULE_DIR$/src/main/resources/META-INF/LICENSE.txt},{META-INF/NOTICE.txt=$MODULE_DIR$/src/main/resources/META-INF/NOTICE.txt},{META-INF/services/org/apache/camel/TypeConverter=$MODULE_DIR$/src/main/resources/META-INF/services/org/apache/camel/TypeConverter},{PersonNative.properties=$MODULE_DIR$/src/main/resources/PersonNative.properties},{PersonNative.txt=$MODULE_DIR$/src/main/resources/PersonNative.txt},{PersonNormReady.properties=$MODULE_DIR$/src/main/resources/PersonNormReady.properties},{PersonNormReady.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.txt},{spring-test-config.xml.sav=$MODULE_DIR$/src/main/resources/spring-test-config.xml.sav}" />
+          <property key="Include-Resource" value="META-INF/persistence.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/persistence.xml,META-INF/spring/camel-context.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/spring/camel-context.xml,{features.xml=$MODULE_DIR$/src/main/resources/features.xml},{genasmcfg.properties=$MODULE_DIR$/src/main/resources/genasmcfg.properties},{IPersonNative.properties=$MODULE_DIR$/src/main/resources/IPersonNative.properties},{IPersonNative.txt=$MODULE_DIR$/src/main/resources/IPersonNative.txt},{IPersonNormReady.properties=$MODULE_DIR$/src/main/resources/IPersonNormReady.properties},{IPersonNormReady.txt=$MODULE_DIR$/src/main/resources/IPersonNormReady.txt},{log4j.properties=$MODULE_DIR$/src/main/resources/log4j.properties},{META-INF/LICENSE.txt=$MODULE_DIR$/src/main/resources/META-INF/LICENSE.txt},{META-INF/NOTICE.txt=$MODULE_DIR$/src/main/resources/META-INF/NOTICE.txt},{META-INF/services/org/apache/camel/TypeConverter=$MODULE_DIR$/src/main/resources/META-INF/services/org/apache/camel/TypeConverter},{PersonNative.properties=$MODULE_DIR$/src/main/resources/PersonNative.properties},{PersonNative.txt=$MODULE_DIR$/src/main/resources/PersonNative.txt},{PersonNormReady.new.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.new.txt},{PersonNormReady.properties=$MODULE_DIR$/src/main/resources/PersonNormReady.properties},{PersonNormReady.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.txt},{spring-test-config.xml.sav=$MODULE_DIR$/src/main/resources/spring-test-config.xml.sav}" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -18,7 +18,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="camel" />
+        </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/profiles/eclipselink/META-INF/persistence.xml" />
       </configuration>
     </facet>
@@ -40,10 +42,10 @@
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/profiles/openjpa" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/profiles/openjpa" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -64,8 +66,8 @@
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-util:4.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:4.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:4.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.10.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.12.2" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
@@ -74,12 +76,12 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-jpa:2.10.3" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.0.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-jaxb:2.10.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-juel:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jpa:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jaxb:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-juel:2.12.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-el_1.0_spec:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: de.odysseus.juel:juel:2.1.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
@@ -127,6 +129,8 @@
     <orderEntry type="library" name="Maven: com.github.stephenc.eaio-uuid:uuid:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: com.ecyrd.speed4j:speed4j:0.9" level="project" />
     <orderEntry type="library" name="Maven: com.github.stephenc:jamm:0.2.5" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jsqlparser:jsqlparser:0.7.0" level="project" />
+    <orderEntry type="library" name="Maven: gudusoft.gsqlparser:gsp:1.4.9.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.openjpa:openjpa-persistence-jdbc:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.openjpa:openjpa-jdbc:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.openjpa:openjpa-kernel:2.2.1" level="project" />
