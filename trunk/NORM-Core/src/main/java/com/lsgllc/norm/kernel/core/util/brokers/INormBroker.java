@@ -2,10 +2,7 @@ package com.lsgllc.norm.kernel.core.util.brokers;
 
 
 import com.lsgllc.norm.kernel.core.util.identity.INormId;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
 import org.apache.camel.Component;
-import org.apache.camel.ProducerTemplate;
-import org.apache.camel.spring.CamelProducerTemplateFactoryBean;
 
 import java.util.concurrent.ConcurrentNavigableMap;
 

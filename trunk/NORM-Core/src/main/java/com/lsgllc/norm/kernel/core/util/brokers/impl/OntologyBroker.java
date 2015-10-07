@@ -2,14 +2,11 @@ package com.lsgllc.norm.kernel.core.util.brokers.impl;
 
 import com.lsgllc.norm.kernel.core.util.brokers.IOntologyBroker;
 import com.lsgllc.norm.kernel.core.util.identity.INormId;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormOntology;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormOntologySegment;
 import com.lsgllc.norm.kernel.graph.things.INormObjectStore;
-import com.lsgllc.norm.kernel.graph.things.INormThing;
 import com.lsgllc.norm.util.exceptions.NormSystemException;
 import com.lsgllc.norm.util.impl.GRAPH_PROPERTY_KEYS;
-import org.apache.openjpa.kernel.AbstractBrokerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 

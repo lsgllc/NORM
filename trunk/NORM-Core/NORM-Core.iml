@@ -2,14 +2,14 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Osmorc" name="OSGi">
-      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="NORM-Core-1.0a-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="NORMCore" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="NORM-Core-1.0a-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="NORMCore" bundleVersion="1.0.0.0a-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Description" value="Universal Data Model No Object-Relational Mapping Database" />
           <property key="Bundle-Vendor" value="Loy Services Group, LLC" />
           <property key="Private-Package" value="com.lsgllc.*" />
           <property key="Import-Package" value="*" />
           <property key="Bundle-Name" value="NORM_Core" />
-          <property key="Include-Resource" value="META-INF/persistence.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/persistence.xml,META-INF/spring/camel-context.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/spring/camel-context.xml,{features.xml=$MODULE_DIR$/src/main/resources/features.xml},{genasmcfg.properties=$MODULE_DIR$/src/main/resources/genasmcfg.properties},{IPersonNative.properties=$MODULE_DIR$/src/main/resources/IPersonNative.properties},{IPersonNative.txt=$MODULE_DIR$/src/main/resources/IPersonNative.txt},{IPersonNormReady.properties=$MODULE_DIR$/src/main/resources/IPersonNormReady.properties},{IPersonNormReady.txt=$MODULE_DIR$/src/main/resources/IPersonNormReady.txt},{log4j.properties=$MODULE_DIR$/src/main/resources/log4j.properties},{META-INF/LICENSE.txt=$MODULE_DIR$/src/main/resources/META-INF/LICENSE.txt},{META-INF/NOTICE.txt=$MODULE_DIR$/src/main/resources/META-INF/NOTICE.txt},{META-INF/services/org/apache/camel/TypeConverter=$MODULE_DIR$/src/main/resources/META-INF/services/org/apache/camel/TypeConverter},{PersonNative.properties=$MODULE_DIR$/src/main/resources/PersonNative.properties},{PersonNative.txt=$MODULE_DIR$/src/main/resources/PersonNative.txt},{PersonNormReady.new.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.new.txt},{PersonNormReady.properties=$MODULE_DIR$/src/main/resources/PersonNormReady.properties},{PersonNormReady.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.txt},{spring-test-config.xml.sav=$MODULE_DIR$/src/main/resources/spring-test-config.xml.sav}" />
+          <property key="Include-Resource" value="META-INF/persistence.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/persistence.xml,META-INF/spring/camel-context.xml=$MODULE_DIR$/src/profiles/openjpa/META-INF/spring/camel-context.xml,{createAllIBM.sql=$MODULE_DIR$/src/main/resources/createAllIBM.sql},{features.xml=$MODULE_DIR$/src/main/resources/features.xml},{genasmcfg.properties=$MODULE_DIR$/src/main/resources/genasmcfg.properties},{IPersonNative-out.txt=$MODULE_DIR$/src/main/resources/IPersonNative-out.txt},{IPersonNative.properties=$MODULE_DIR$/src/main/resources/IPersonNative.properties},{IPersonNative.txt=$MODULE_DIR$/src/main/resources/IPersonNative.txt},{IPersonNormReady-out.txt=$MODULE_DIR$/src/main/resources/IPersonNormReady-out.txt},{IPersonNormReady.properties=$MODULE_DIR$/src/main/resources/IPersonNormReady.properties},{IPersonNormReady.txt=$MODULE_DIR$/src/main/resources/IPersonNormReady.txt},{log4j.properties=$MODULE_DIR$/src/main/resources/log4j.properties},{META-INF/LICENSE.txt=$MODULE_DIR$/src/main/resources/META-INF/LICENSE.txt},{META-INF/NOTICE.txt=$MODULE_DIR$/src/main/resources/META-INF/NOTICE.txt},{META-INF/services/org/apache/camel/TypeConverter=$MODULE_DIR$/src/main/resources/META-INF/services/org/apache/camel/TypeConverter},{PersonNative-out.txt=$MODULE_DIR$/src/main/resources/PersonNative-out.txt},{PersonNative.properties=$MODULE_DIR$/src/main/resources/PersonNative.properties},{PersonNative.txt=$MODULE_DIR$/src/main/resources/PersonNative.txt},{PersonNormReady-out.txt=$MODULE_DIR$/src/main/resources/PersonNormReady-out.txt},{PersonNormReady.new.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.new.txt},{PersonNormReady.properties=$MODULE_DIR$/src/main/resources/PersonNormReady.properties},{PersonNormReady.txt=$MODULE_DIR$/src/main/resources/PersonNormReady.txt},{spring-test-config.xml.sav=$MODULE_DIR$/src/main/resources/spring-test-config.xml.sav}" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -50,6 +50,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jpa:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jaxb:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-juel:2.12.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jsqlparser:jsqlparser:0.7.0" level="project" />
+    <orderEntry type="library" name="Maven: gudusoft.gsqlparser:gsp:1.4.9.8" level="project" />
     <orderEntry type="library" name="Maven: geoGoogle:geoGoogle:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.1" level="project" />
@@ -58,9 +68,9 @@
     <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1-beta1" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.2" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.0.3" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jsr173_api:1.0" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.1" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:4.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-util:4.1" level="project" />
@@ -68,13 +78,7 @@
     <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:4.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.12.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-jpa:2.12.2" level="project" />
@@ -84,8 +88,14 @@
     <orderEntry type="library" name="Maven: org.apache.camel:camel-juel:2.12.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-el_1.0_spec:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: de.odysseus.juel:juel:2.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.derby:derby:10.8.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1" level="project" />
@@ -100,10 +110,13 @@
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.0" level="project" />
     <orderEntry type="library" name="Maven: org.hectorclient:hector-core:1.1-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.cassandra:cassandra-thrift:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:r09" level="project" />
+    <orderEntry type="library" name="Maven: com.github.stephenc.eaio-uuid:uuid:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.ecyrd.speed4j:speed4j:0.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cassandra:cassandra-all:1.1.5" level="project" />
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.0.4.1" level="project" />
     <orderEntry type="library" name="Maven: com.ning:compress-lzf:0.8.4" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:r09" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr:3.2" level="project" />
@@ -111,24 +124,21 @@
     <orderEntry type="library" name="Maven: org.antlr:stringtemplate:3.2" level="project" />
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cassandra.deps:avro:1.4.0-cassandra-1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty:6.1.22" level="project" />
     <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.22" level="project" />
     <orderEntry type="library" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.github.stephenc.high-scale-lib:high-scale-lib:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.6" level="project" />
     <orderEntry type="library" name="Maven: edu.stanford.ppl:snaptree:0.1" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.stephenc:jamm:0.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.9.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.1.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.cassandra:cassandra-thrift:1.1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.github.stephenc.eaio-uuid:uuid:3.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.ecyrd.speed4j:speed4j:0.9" level="project" />
-    <orderEntry type="library" name="Maven: com.github.stephenc:jamm:0.2.5" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jsqlparser:jsqlparser:0.7.0" level="project" />
     <orderEntry type="library" name="Maven: gudusoft.gsqlparser:gsp:1.4.9.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.openjpa:openjpa-persistence-jdbc:2.2.1" level="project" />
@@ -141,4 +151,3 @@
     <orderEntry type="library" name="Maven: org.apache.openjpa:openjpa-persistence:2.2.1" level="project" />
   </component>
 </module>
-

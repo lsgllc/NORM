@@ -3,7 +3,7 @@ package com.lsgllc.norm.kernel.graph.model.instance.impl.owl;
 import com.lsgllc.norm.kernel.graph.model.instance.INormInstance;
 import com.lsgllc.norm.kernel.graph.model.instance.impl.NormObjectValue;
 import com.lsgllc.norm.kernel.graph.model.instance.impl.scalar.AbstractNormInstance;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.PropertyId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.PropertyId;
 import com.lsgllc.norm.kernel.graph.things.INormProperty;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
 

@@ -2,7 +2,7 @@ package com.lsgllc.norm.kernel.graph.model.instance.impl;
 
 import com.lsgllc.norm.kernel.core.util.identity.INormId;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INormInstanceType;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.AbstractNormMetaId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.AbstractNormMetaId;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;
 import com.lsgllc.norm.kernel.graph.typing.INormType;
 

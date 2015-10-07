@@ -2,7 +2,7 @@ package com.lsgllc.norm.kernel.graph.model.instance.impl.scalar;
 
 import com.lsgllc.norm.kernel.graph.model.instance.impl.NormScalarValue;
 import com.lsgllc.norm.kernel.graph.model.instance.types.INSTANCE_TYPE;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.ObjectId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.ObjectId;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
 
 /**

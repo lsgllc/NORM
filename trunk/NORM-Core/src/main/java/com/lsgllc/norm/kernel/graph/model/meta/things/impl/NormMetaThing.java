@@ -1,7 +1,7 @@
 package com.lsgllc.norm.kernel.graph.model.meta.things.impl;
 
-import com.lsgllc.norm.kernel.graph.model.meta.identity.PropertyId;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.ValueId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.PropertyId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.ValueId;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormPredicate;
 import com.lsgllc.norm.kernel.graph.model.meta.owl.INormTriple;
 import com.lsgllc.norm.kernel.graph.model.meta.things.INormMetaThing;

@@ -31,7 +31,7 @@
     <bean id="jpa" class="org.apache.camel.component.jpa.JpaComponent">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
-    <bean id="graphman" class="com.lsgllc.norm.util.impl.GraphManager">
+    <bean id="graphman" class="com.lsgllc.norm.kernel.core.util.brokers.impl.OntologyBroker">
         <property name="springContext" ref="springcontext" />
     </bean>
 

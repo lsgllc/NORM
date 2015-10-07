@@ -1,7 +1,7 @@
 package com.lsgllc.norm.kernel.graph.model.meta.things.impl.containedby;
 
 import com.lsgllc.norm.kernel.graph.model.instance.identity.impl.ObjectInstanceId;
-import com.lsgllc.norm.kernel.graph.model.meta.identity.ObjectStoreId;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.impl.ObjectStoreId;
 import com.lsgllc.norm.kernel.graph.things.INormThing;
 import com.lsgllc.norm.kernel.graph.things.impl.AbstractNormObjectStoreThing;
 

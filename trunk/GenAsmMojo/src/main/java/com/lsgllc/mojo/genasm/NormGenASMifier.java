@@ -87,7 +87,7 @@ public class NormGenASMifier extends ASMifier {
         cr = new ClassReader(new FileInputStream(className));
 //        key.push("Class");
         cr.accept(new NormGenAsmTraceClassVisitor(null, this, new PrintWriter(
-                new FileOutputStream(outFilename+".txt")),propertyFileMaker,key), flags);
+                new FileOutputStream(outFilename+"-out.txt")),propertyFileMaker,key), flags);
 //        key.pop();
         propertyFileMaker.saveAndClose();
         propertyFileMaker = null;

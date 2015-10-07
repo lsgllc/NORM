@@ -1,4 +1,4 @@
-package com.lsgllc.norm.kernel.graph.model.meta.identity;
+package com.lsgllc.norm.kernel.graph.model.meta.identity.impl;
 
 import com.lsgllc.norm.kernel.core.util.identity.impl.AbstractNormId;
 import com.lsgllc.norm.kernel.graph.typing.ELEMENT_TYPES;

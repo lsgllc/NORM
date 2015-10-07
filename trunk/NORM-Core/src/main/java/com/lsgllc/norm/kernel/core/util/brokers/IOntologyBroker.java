@@ -1,7 +1,6 @@
 package com.lsgllc.norm.kernel.core.util.brokers;
 
-import com.lsgllc.norm.kernel.graph.model.meta.identity.OntologyId;
-import com.lsgllc.norm.kernel.graph.things.INormThing;
+import com.lsgllc.norm.kernel.graph.model.meta.identity.IOntologyId;
 
 /*
  * $Id
@@ -15,7 +14,7 @@ import com.lsgllc.norm.kernel.graph.things.INormThing;
 */
 public interface IOntologyBroker<K ,V  > extends INormBroker<K,V> {
     ClassLoader getContextClassLoader();
-    OntologyId getOntology(String key);
+    IOntologyId getOntology(String key);
     void removeOntology(String key);
     void updateOntology(String key);
 
