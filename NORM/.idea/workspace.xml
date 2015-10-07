@@ -2,177 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc44a46-d5b3-4037-948e-e6df221fc9e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/persistence/INormCatalog.java" />
-      <change type="NEW" beforePath="" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/IOntologyId.java" />
-      <change type="NEW" beforePath="" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/persistence/impl/NormCatalog.java" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_apache_camel_camel_core_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_apache_camel_camel_jaxb_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_apache_camel_camel_jpa_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_apache_camel_camel_juel_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_apache_camel_camel_spring_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_springframework_spring_jdbc_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_springframework_spring_orm_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_springframework_spring_tx_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_core_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_jaxb_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_jpa_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_juel_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_spring_2_10_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_0_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/identity/INormContainerMarker.class" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/identity/INormId.class" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/identity/impl/AbstractNormId.class" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/NormMetaValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AbstractNormMetaId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/AbstractNormMetaId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/AttributeId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/AttributeId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/EntityId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/EntityId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/ObjectId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectStoreId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/ObjectStoreId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologyId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/OntologyId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologySegmentId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/OntologySegmentId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/PropertyId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/PropertyId.java" />
-      <change type="MOVED" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/ValueId.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/identity/impl/ValueId.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractAttributeInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractAttributeInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractEntityInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormContainer.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormContainer.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap$RELATIONSHIP.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap$RELATIONSHIP.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/impl/AbstractNormHashMap.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId$1.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId$1.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/AbstractNormInstanceId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/types/impl/AbstractNormInstanceType.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/types/impl/AbstractNormInstanceType.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/AbstractNormMetaId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/AbstractNormMetaId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractNormOWLInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractNormOWLInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/AbstractNormPredicate.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/AbstractNormPredicate.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/typing/impl/AbstractNormType.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/typing/impl/AbstractNormType.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/AbstractNormValue.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/AbstractNormValue.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractOntologySegment.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/impl/AbstractOntologySegment.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/springsupport/AppContext.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/springsupport/AppContext.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/springsupport/ApplicationContextProvider.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/springsupport/ApplicationContextProvider.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/AttributeId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/AttributeId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/BooleanId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/BooleanId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ByteId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ByteId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/CharId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/CharId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/DefaultNormCreds.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/DefaultNormCreds.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/DoubleId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/DoubleId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/EntityId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/EntityId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/FloatId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/FloatId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormAttribute.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormAttribute.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/INormContainer.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/containment/INormContainer.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormEntity.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormEntity.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/INormInstanceId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/INormInstanceId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormObjectStore.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormObjectStore.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormOntology.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormOntology.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormPredicate.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormPredicate.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormProperty.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/things/INormProperty.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormTriple.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/INormTriple.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/IntegerId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/IntegerId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/LongId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/LongId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/NORM-Core-1.0a-SNAPSHOT.jar" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/NORM-Core-1.0a-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormAttributeThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormAttributeThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormAttributeThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormAttributeThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/normgen/asm/NormClassReader.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/normgen/asm/NormClassReader.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/NormConnection.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/NormConnection.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/NormDataMart.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/util/client/impl/NormDataMart.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormEntityThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormEntityThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormEntityThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormEntityThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectStoreThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectStoreThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectStoreThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectStoreThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormOntology.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormOntology.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/normgen/asm/NormPersistentClassGenerator.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/normgen/asm/NormPersistentClassGenerator.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormPropertyThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormPropertyThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormPropertyThing.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormPropertyThing.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/NormScalarValue.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/impl/NormScalarValue.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/NormTriple.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/owl/impl/NormTriple.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/typing/impl/NormTypeId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/typing/impl/NormTypeId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ObjectInstanceId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ObjectInstanceId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectStoreId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ObjectStoreId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologyId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologyId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologySegmentId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/OntologySegmentId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/PropertyId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/PropertyId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ShortId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/ShortId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/StringId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/instance/identity/impl/StringId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ValueId.class" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/com/lsgllc/norm/kernel/graph/model/meta/identity/ValueId.class" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormAttributeThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/AbstractNormBroker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/AbstractNormBroker.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormEntityThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/types/impl/AbstractNormMetaType.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormObjectInstance.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/scalar/AbstractNormObjectInstance.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectStoreThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormObjectThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormOntology.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractNormPropertyThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractObjectInstance.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractOntologySegment.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/things/impl/AbstractOntologySegment.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/owl/AbstractPropertyInstance.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/INormBroker.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/IOntologyBroker.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNative.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/IPersonNormReady.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/META-INF/MANIFEST.MF" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" afterPath="$CLASS$/IdeaProjects/NORM/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_firebrandocm_firebrand_1_0_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/GenAsmMojo.iml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/NORM-Core.iml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/NORM-Core.iml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormAttributeThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormAttributeThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormAttributeThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormAttributeThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormEntityThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormEntityThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormEntityThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormEntityThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/GenAsmMojo/src/main/java/com/lsgllc/mojo/genasm/NormGenASMifier.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormMetaThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormMetaThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/containedby/scalar/NormObjectInstance.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/containedby/scalar/NormObjectInstance.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/contains/NormObjectInstance.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/contains/NormObjectInstance.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectStoreThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectStoreThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectStoreThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectStoreThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormObjectThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormObjectThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormObjectValue.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/instance/impl/NormObjectValue.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormOntology.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/NormOntology.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormOntologySegment.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormOntologySegment.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormOntologySegment.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormOntologySegment.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormPropertyThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/containedby/NormPropertyThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormPropertyThing.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/graph/model/meta/things/impl/contains/NormPropertyThing.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/norm/kernel/core/util/brokers/impl/OntologyBroker.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNative.txt" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.properties" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/PersonNormReady.txt" />
+      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/Norm.iml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/Norm.iml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/TXDMV-UOM.iml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/TXDMV-UOM.iml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/META-INF/spring/camel-context.xml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/META-INF/spring/camel-context.xml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/target/classes/META-INF/spring/camel-context.xml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/TXDMV-UOM/target/classes/META-INF/spring/camel-context.xml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/columnInClause.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/columnInClause.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/columnsInResultColumn.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/columnsInResultColumn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/createAllIBM.sql" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/resources/createAllIBM.sql" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/features.xml" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/target/classes/features.xml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/getResultColumn.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/getResultColumn.java" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/gettablecolumns.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/gettablecolumns.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/.idea/misc.xml" afterPath="$CLASS$/IdeaProjects/NORM/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/.idea/modules.xml" afterPath="$CLASS$/IdeaProjects/NORM/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/.idea/copyright/profiles_settings.xml" afterPath="$CLASS$/IdeaProjects/NORM/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/whatClause.java" afterPath="$CLASS$/IdeaProjects/NORM/trunk/NORM-Core/src/main/java/com/lsgllc/parser/demos/gettablecolumns/whatClause.java" />
-      <change type="MODIFICATION" beforePath="$CLASS$/IdeaProjects/NORM/.idea/workspace.xml" afterPath="$CLASS$/IdeaProjects/NORM/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NORM.iws" />
@@ -299,7 +140,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="504" column="92" selection-start-line="504" selection-start-column="92" selection-end-line="504" selection-end-column="92" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -349,7 +192,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -359,7 +204,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1103#1104#0" expanded="false" />
+                <element signature="e#1157#1158#0" expanded="false" />
+                <element signature="e#6249#6250#0" expanded="false" />
+                <element signature="e#6287#6288#0" expanded="false" />
+                <element signature="e#6345#6346#0" expanded="false" />
+                <element signature="e#6404#6405#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -398,6 +251,11 @@
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
     </option>
   </component>
   <component name="JUnitClassTemplateConfiguration">
@@ -572,6 +430,8 @@
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -923,7 +783,7 @@
       <updated>1355946298101</updated>
       <workItem from="1426980643550" duration="599000" />
       <workItem from="1431464892310" duration="261000" />
-      <workItem from="1444241264407" duration="20000" />
+      <workItem from="1444241264407" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="genasmmojo new code">
       <created>1367440839338</created>
@@ -949,7 +809,13 @@
       <option name="project" value="LOCAL" />
       <updated>1368627643936</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First cut of auto gen of asm template.">
+      <created>1444241301956</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1444241301956</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers>
       <GitHub shared="false" url="">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -969,7 +835,7 @@
     </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="880000" />
+    <option name="totallyTimeSpent" value="997000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1003,22 +869,23 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.43643263" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32264957" sideWeight="0.1905016" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542694" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19583778" sideWeight="0.16888046" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16591929" sideWeight="0.670778" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19562781" sideWeight="0.670778" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31723484" sideWeight="0.80949837" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1026,7 +893,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31912878" sideWeight="0.92102456" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4592803" sideWeight="0.49573106" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542694" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1087,7 +953,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="504" column="92" selection-start-line="504" selection-start-column="92" selection-end-line="504" selection-end-column="92" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,7 +995,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,7 +1005,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1103#1104#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6287#6288#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6404#6405#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,7 +1037,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="504" column="92" selection-start-line="504" selection-start-column="92" selection-end-line="504" selection-end-column="92" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,7 +1079,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,7 +1089,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1103#1104#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6287#6288#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6404#6405#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1231,7 +1121,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="504" column="122" selection-start-line="504" selection-start-column="92" selection-end-line="504" selection-end-column="92" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1271,7 +1163,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,7 +1173,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1103#1104#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6287#6288#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6404#6405#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,7 +1247,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="504" column="92" selection-start-line="504" selection-start-column="92" selection-end-line="504" selection-end-column="92" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,7 +1280,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1384,7 +1290,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1103#1104#0" expanded="false" />
+            <element signature="e#1157#1158#0" expanded="false" />
+            <element signature="e#6249#6250#0" expanded="false" />
+            <element signature="e#6287#6288#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+            <element signature="e#6404#6405#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

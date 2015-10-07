@@ -44,8 +44,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GenAsmMojo" target="1.5" />
       <module name="kernel" target="1.6" />
+      <module name="Norm" target="1.5" />
+      <module name="NORM-Core" target="1.5" />
+      <module name="TXDMV-UOM" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
-

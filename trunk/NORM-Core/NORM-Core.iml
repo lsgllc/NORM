@@ -37,7 +37,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -50,16 +50,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-jpa:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-jaxb:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-juel:2.12.2" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.jsqlparser:jsqlparser:0.7.0" level="project" />
-    <orderEntry type="library" name="Maven: gudusoft.gsqlparser:gsp:1.4.9.8" level="project" />
     <orderEntry type="library" name="Maven: geoGoogle:geoGoogle:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.1" level="project" />
