@@ -1,1 +1,0 @@
-package com.txdot.isd.rts.webservices.webapps;/* &RtsWebAppsService_SEI& */public interface RtsWebAppsService_SEI extends java.rmi.Remote{/* &RtsWebAppsService_SEI.processData$2& */ public com.txdot.isd.rts.webservices.webapps.data.RtsWebAppsResponse[] processData(com.txdot.isd.rts.webservices.webapps.data.RtsWebAppsRequest[] aarrRequest);}/* #RtsWebAppsService_SEI# */

@@ -1,1 +1,0 @@
-package com.txdot.isd.rts.webservices.bat;/* &RtsBatchListService_SEI& */public interface RtsBatchListService_SEI extends java.rmi.Remote{/* &RtsBatchListService_SEI.processData$2& */  public com.txdot.isd.rts.webservices.bat.data.RtsBatchListResponse[] processData(com.txdot.isd.rts.webservices.bat.data.RtsBatchListRequest[] aarrRequest);}/* #RtsBatchListService_SEI# */

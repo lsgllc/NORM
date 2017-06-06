@@ -1,1 +1,0 @@
-package com.txdot.isd.rts.webservices.ren;/* &RtsRenLookupService_SEI& */public interface RtsRenLookupService_SEI extends java.rmi.Remote{/* &RtsRenLookupService_SEI.processData$2& */  public com.txdot.isd.rts.webservices.ren.data.RtsRenewalResponse[] processData(com.txdot.isd.rts.webservices.ren.data.RtsRenewalRequest[] aarrRequest);}/* #RtsRenLookupService_SEI# */

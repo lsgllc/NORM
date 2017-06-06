@@ -1,1 +1,0 @@
-package com.txdot.isd.rts.webservices.veh;/* &RtsVehPublicService_SEI& */public interface RtsVehPublicService_SEI extends java.rmi.Remote{/* &RtsVehPublicService_SEI.processData$2& */  public com.txdot.isd.rts.webservices.veh.data.RtsVehPublicResponse[] processData(com.txdot.isd.rts.webservices.veh.data.RtsVehPublicRequest[] aarrRequest);}/* #RtsVehPublicService_SEI# */

@@ -1,1 +1,0 @@
-package com.txdot.isd.rts.webservices.ses;/* &RtsAgntLoginService_SEI& */public interface RtsAgntLoginService_SEI extends java.rmi.Remote{/* &RtsAgntLoginService_SEI.processData$2& */  public com.txdot.isd.rts.webservices.ses.data.RtsSessionResponse[] processData(com.txdot.isd.rts.webservices.ses.data.RtsSessionRequest[] aarrRequest);}/* #RtsAgntLoginService_SEI# */
